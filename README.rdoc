@@ -1,0 +1,17 @@
+== Contas Refeitas
+
+Código fonte do Web site para visualização dos gastos da Câmara de São Paulo
+
+Este site está disponível em http://www.contasrefeitas.com.br.
+
+O PAD do projeto está disponível em http://okfnpad.org/contas-refeitas.
+
+* Está site começou a ser feito durante o Hackaton da Câmara Municipal de São Paulo.
+
+== Requisitos e Instalação
+
+  Estamos no trabalhando no projeto e em breve termos todos os procedimento descritivo
+
+== TODO
+
+	Estamos elaborando quais serão as features iniciais do sistema.
