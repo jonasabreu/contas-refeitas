@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--***************************************************-->
+<!--*                     G.I.A.P                     *-->
+<!--*             www.giaponline.com.br               *-->
+<!--*      SIOP-V4 - Sistema de Orçamento Publico     *-->
+<!--*1-CÂMARA MUNICIPAL DE SÃO PAULO                  *-->
+<!--***************************************************-->
+<OF72133>
+<Titulo>Balancete Da Despesa Por Natureza da Despesa - Orçamentário - XML</Titulo>
+<Periodo></Periodo>
+    <G_Categoria>
+        <Categoria>319009</Categoria>
+        <Categoria_Descricao>Salário-Família</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>5</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.1.90.09.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>5120</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>5120</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>319011</Categoria>
+        <Categoria_Descricao>Vencimentos E Vantagens Fixas - Pessoal Civil</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>6</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.1.90.11.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>272571124</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>272571124</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>319013</Categoria>
+        <Categoria_Descricao>Obrigações Patronais</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>7</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.1.90.13.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>34376830</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>34376830</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>319092</Categoria>
+        <Categoria_Descricao>Despesas De Exercícios Anteriores</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>8</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.1.90.92.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>1500000</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>1500000</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>319094</Categoria>
+        <Categoria_Descricao>Indenizações E Restituições Trabalhistas</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>9</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.1.90.94.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>4000000</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>4000000</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>319113</Categoria>
+        <Categoria_Descricao>Obrigações Patronais</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>10</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.1.91.13.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>25044205</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>25044205</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>339008</Categoria>
+        <Categoria_Descricao>Outros Benefícios Assistenciais</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>11</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.3.90.08.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>400000</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>400000</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>339014</Categoria>
+        <Categoria_Descricao>Diárias - Civil</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>12</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.3.90.14.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>50000</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>50000</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>339030</Categoria>
+        <Categoria_Descricao>Material De Consumo</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>13</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.3.90.30.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>3684853</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>3684853</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>339031</Categoria>
+        <Categoria_Descricao>Premiacoes</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>14</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.3.90.31.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>87728</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>87728</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>339032</Categoria>
+        <Categoria_Descricao>Material De Distribuição Gratuita</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>15</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.3.90.32.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>25000</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>25000</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>339033</Categoria>
+        <Categoria_Descricao>Passagens E Despesas Com Locomoção</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>16</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.3.90.33.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>70000</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>70000</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>339035</Categoria>
+        <Categoria_Descricao>Serviços De Consultoria</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>17</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.3.90.35.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>10000</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>10000</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>339036</Categoria>
+        <Categoria_Descricao>Outros Serviços De Terceiros - Pessoa Fisica</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>18</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.3.90.36.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>50000</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>50000</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>339037</Categoria>
+        <Categoria_Descricao>Locação De Mao-De-Obra</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>19</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.3.90.37.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>7797396</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>7797396</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>339039</Categoria>
+        <Categoria_Descricao>Outros Serviços De Terceiros - Pessoa Jurídica</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>26</Ficha>
+              <Dotacao>09.10.01.126.2620.2.171.3.3.90.39.00</Dotacao>
+              <Especificacao>Implantação E Operação De Sistemas De Informação E Comunicação</Especificacao>
+              <Orcado>660000</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>660000</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+            <Dotacao>
+              <Ficha>20</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.3.90.39.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>43436942</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>43436942</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+            <Dotacao>
+              <Ficha>25</Ficha>
+              <Dotacao>09.10.01.122.2920.2.003.3.3.90.39.00</Dotacao>
+              <Especificacao>Câmara Municipal De São Paulo - Comunicação</Especificacao>
+              <Orcado>29569280</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>29569280</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>339049</Categoria>
+        <Categoria_Descricao>Auxílio - Transporte</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>21</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.3.90.49.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>650000</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>650000</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>339092</Categoria>
+        <Categoria_Descricao>Despesas De Exercícios Anteriores</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>22</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.3.90.92.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>100000</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>100000</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>339093</Categoria>
+        <Categoria_Descricao>Indenizações E Restituições</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>23</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.3.3.90.93.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>8000000</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>8000000</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>449039</Categoria>
+        <Categoria_Descricao>Outros Serviços De Terceiros - Pessoa Jurídica</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>1</Ficha>
+              <Dotacao>09.10.01.031.2610.1.000.4.4.90.39.00</Dotacao>
+              <Especificacao>Construção De Edificações Da Câmara Municipal De São Paulo</Especificacao>
+              <Orcado>11951811</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>11951811</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+            <Dotacao>
+              <Ficha>3</Ficha>
+              <Dotacao>09.10.01.031.2610.1.001.4.4.90.39.00</Dotacao>
+              <Especificacao>Reforma E Ampliação De Edificações Da Câmara Municipal De São Paulo</Especificacao>
+              <Orcado>9177283</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>9177283</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>449051</Categoria>
+        <Categoria_Descricao>Obras E Instalações</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>2</Ficha>
+              <Dotacao>09.10.01.031.2610.1.000.4.4.90.51.00</Dotacao>
+              <Especificacao>Construção De Edificações Da Câmara Municipal De São Paulo</Especificacao>
+              <Orcado>10050005</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>10050005</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+            <Dotacao>
+              <Ficha>4</Ficha>
+              <Dotacao>09.10.01.031.2610.1.001.4.4.90.51.00</Dotacao>
+              <Especificacao>Reforma E Ampliação De Edificações Da Câmara Municipal De São Paulo</Especificacao>
+              <Orcado>2134252</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>2134252</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+    <G_Categoria>
+        <Categoria>449052</Categoria>
+        <Categoria_Descricao>Equipamentos E Material Permanente</Categoria_Descricao>
+        <Fichas>
+            <Dotacao>
+              <Ficha>24</Ficha>
+              <Dotacao>09.10.01.031.2710.2.000.4.4.90.52.00</Dotacao>
+              <Especificacao>Administração Da Câmara  Municipal De São Paulo</Especificacao>
+              <Orcado>2101814</Orcado>
+              <Suplementado>0</Suplementado>
+              <Anulado>0</Anulado>
+              <Contigenciado>0</Contigenciado>
+              <Empenhado_Periodo>0</Empenhado_Periodo>
+              <Empenhado_Acumulado>0</Empenhado_Acumulado>
+              <Pago_Periodo>0</Pago_Periodo>
+              <Pago_Acumulado>0</Pago_Acumulado>
+              <Saldo_Empenhar>2101814</Saldo_Empenhar>
+              <Saldo_Pagar>0</Saldo_Pagar>
+            </Dotacao>
+        </Fichas>
+    </G_Categoria>
+</OF72133>

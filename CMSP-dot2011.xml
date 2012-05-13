@@ -1,0 +1,814 @@
+<CMSP>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2610</idPrograma>
+    <programa>Suporte administrativo</programa>
+    <idProjetoAtividade>1000</idProjetoAtividade>
+    <projetoAtividade>Construção de Edificações da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>44903900</idDespesa>
+    <despesa>Outros Serviços de Terceiros - Pessoa Jurídica</despesa>
+    <idCategoriaDespesa>4</idCategoriaDespesa>
+    <categoriaDespesa>Despesas de Capital</categoriaDespesa>
+    <idGrupoDespesa>4</idGrupoDespesa>
+    <grupoDespesa>INVESTIMENTOS</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>39</idElementoDespesa>
+    <elementoDespesa>Outros Serviços de Terceiros - Pessoa Jurídica</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2610.1000.4.4.90.39.00</dotacao>
+    <valor>11200000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2610</idPrograma>
+    <programa>Suporte administrativo</programa>
+    <idProjetoAtividade>1000</idProjetoAtividade>
+    <projetoAtividade>Construção de Edificações da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>44905100</idDespesa>
+    <despesa>Obras e Instalações</despesa>
+    <idCategoriaDespesa>4</idCategoriaDespesa>
+    <categoriaDespesa>Despesas de Capital</categoriaDespesa>
+    <idGrupoDespesa>4</idGrupoDespesa>
+    <grupoDespesa>INVESTIMENTOS</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>51</idElementoDespesa>
+    <elementoDespesa>Obras e Instalações</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2610.1000.4.4.90.51.00</dotacao>
+    <valor>10000000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2610</idPrograma>
+    <programa>Suporte administrativo</programa>
+    <idProjetoAtividade>1001</idProjetoAtividade>
+    <projetoAtividade>Reforma e Ampliação de Edificações da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>44903900</idDespesa>
+    <despesa>Outros Serviços de Terceiros - Pessoa Jurídica</despesa>
+    <idCategoriaDespesa>4</idCategoriaDespesa>
+    <categoriaDespesa>Despesas de Capital</categoriaDespesa>
+    <idGrupoDespesa>4</idGrupoDespesa>
+    <grupoDespesa>INVESTIMENTOS</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>39</idElementoDespesa>
+    <elementoDespesa>Outros Serviços de Terceiros - Pessoa Jurídica</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2610.1001.4.4.90.39.00</dotacao>
+    <valor>8600000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2610</idPrograma>
+    <programa>Suporte administrativo</programa>
+    <idProjetoAtividade>1001</idProjetoAtividade>
+    <projetoAtividade>Reforma e Ampliação de Edificações da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>44905100</idDespesa>
+    <despesa>Obras e Instalações</despesa>
+    <idCategoriaDespesa>4</idCategoriaDespesa>
+    <categoriaDespesa>Despesas de Capital</categoriaDespesa>
+    <idGrupoDespesa>4</idGrupoDespesa>
+    <grupoDespesa>INVESTIMENTOS</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>51</idElementoDespesa>
+    <elementoDespesa>Obras e Instalações</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2610.1001.4.4.90.51.00</dotacao>
+    <valor>2000000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>31900900</idDespesa>
+    <despesa>Salário Família</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>1</idGrupoDespesa>
+    <grupoDespesa>PESSOAL E ENCARGOS SOCIAIS</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>09</idElementoDespesa>
+    <elementoDespesa>Salário Família</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.1.90.09.00</dotacao>
+    <valor>5000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>31901100</idDespesa>
+    <despesa>Vencimentos e Vantagens Fixas - Pessoal Civil</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>1</idGrupoDespesa>
+    <grupoDespesa>PESSOAL E ENCARGOS SOCIAIS</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>11</idElementoDespesa>
+    <elementoDespesa>Vencimentos e Vantagens Fixas - Pessoal Civil</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.1.90.11.00</dotacao>
+    <valor>230503699</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>31901300</idDespesa>
+    <despesa>Obrigações Patronais</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>1</idGrupoDespesa>
+    <grupoDespesa>PESSOAL E ENCARGOS SOCIAIS</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>13</idElementoDespesa>
+    <elementoDespesa>Obrigações Patronais</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.1.90.13.00</dotacao>
+    <valor>32117750</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>31909200</idDespesa>
+    <despesa>Despesas de Exercícios Anteriores</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>1</idGrupoDespesa>
+    <grupoDespesa>PESSOAL E ENCARGOS SOCIAIS</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>92</idElementoDespesa>
+    <elementoDespesa>Despesas de Exercícios Anteriores</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.1.90.92.00</dotacao>
+    <valor>4191349</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>31909400</idDespesa>
+    <despesa>Indenizações e Restituições Trabalhistas</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>1</idGrupoDespesa>
+    <grupoDespesa>PESSOAL E ENCARGOS SOCIAIS</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>94</idElementoDespesa>
+    <elementoDespesa>Indenizações e Restituições Trabalhistas</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.1.90.94.00</dotacao>
+    <valor>1500000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>31911300</idDespesa>
+    <despesa>Obrigações Patronais - RPPS</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>1</idGrupoDespesa>
+    <grupoDespesa>PESSOAL E ENCARGOS SOCIAIS</grupoDespesa>
+    <idModalidadeDespesa>91</idModalidadeDespesa>
+    <modalideDespesa>Apl.Dir.Dec.Op. entre Órgãos,Fundos e Ent.Int.Orç.Fiscal e Seg.Social</modalideDespesa>
+    <idElementoDespesa>13</idElementoDespesa>
+    <elementoDespesa>Obrigações Patronais</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.1.91.13.00</dotacao>
+    <valor>22034595</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>33900800</idDespesa>
+    <despesa>Outros Benefícios Assistenciais</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>08</idElementoDespesa>
+    <elementoDespesa>Outros Benefícios Assistenciais</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.3.90.08.00</dotacao>
+    <valor>400000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>33901400</idDespesa>
+    <despesa>Diárias - Civil</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>14</idElementoDespesa>
+    <elementoDespesa>Diárias - Civil</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.3.90.14.00</dotacao>
+    <valor>50000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>33903000</idDespesa>
+    <despesa>Material de Consumo</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>30</idElementoDespesa>
+    <elementoDespesa>Material de Consumo</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.3.90.30.00</dotacao>
+    <valor>3945861</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>33903100</idDespesa>
+    <despesa>Premiações Culturais, Artísticas, Científicas, Des</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>31</idElementoDespesa>
+    <elementoDespesa>Premiações Culturais, Artísticas, Científicas, Desportivas e Outras</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.3.90.31.00</dotacao>
+    <valor>79166</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>33903200</idDespesa>
+    <despesa>Material de Distribuição Gratuita</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>32</idElementoDespesa>
+    <elementoDespesa>Material, Bem ou Serviço para Distribuição Gratuita</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.3.90.32.00</dotacao>
+    <valor>20000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>33903300</idDespesa>
+    <despesa>Passagens e Despesas com Locomoção</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>33</idElementoDespesa>
+    <elementoDespesa>Passagens e Despesas com Locomoção</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.3.90.33.00</dotacao>
+    <valor>64000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>33903500</idDespesa>
+    <despesa>Serviços de Consultoria</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>35</idElementoDespesa>
+    <elementoDespesa>Serviços de Consultoria</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.3.90.35.00</dotacao>
+    <valor>2328868</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>33903600</idDespesa>
+    <despesa>Outros Serviços de Terceiros - Pessoa Física</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>36</idElementoDespesa>
+    <elementoDespesa>Outros Serviços de Terceiros - Pessoa Física</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.3.90.36.00</dotacao>
+    <valor>50000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>33903700</idDespesa>
+    <despesa>Locação de Mão-de-Obra</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>37</idElementoDespesa>
+    <elementoDespesa>Locação de Mão-de-Obra</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.3.90.37.00</dotacao>
+    <valor>7006159</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>33903900</idDespesa>
+    <despesa>Outros Serviços de Terceiros -Pessoa Jurídica</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>39</idElementoDespesa>
+    <elementoDespesa>Outros Serviços de Terceiros - Pessoa Jurídica</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.3.90.39.00</dotacao>
+    <valor>58030091</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>33904900</idDespesa>
+    <despesa>Auxílio-Transporte</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>49</idElementoDespesa>
+    <elementoDespesa>Auxílio-Transporte</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.3.90.49.00</dotacao>
+    <valor>600000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>33909200</idDespesa>
+    <despesa>Despesas de Exercícios Anteriores</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>92</idElementoDespesa>
+    <elementoDespesa>Despesas de Exercícios Anteriores</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.3.90.92.00</dotacao>
+    <valor>100000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>33909300</idDespesa>
+    <despesa>Indenizações e Restituições</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>93</idElementoDespesa>
+    <elementoDespesa>Indenizações e Restituições</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.3.3.90.93.00</dotacao>
+    <valor>8000000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2000</idProjetoAtividade>
+    <projetoAtividade>Administração da Câmara Municipal de São Paulo</projetoAtividade>
+    <idDespesa>44905200</idDespesa>
+    <despesa>Equipamentos e Material Permanente</despesa>
+    <idCategoriaDespesa>4</idCategoriaDespesa>
+    <categoriaDespesa>Despesas de Capital</categoriaDespesa>
+    <idGrupoDespesa>4</idGrupoDespesa>
+    <grupoDespesa>INVESTIMENTOS</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>52</idElementoDespesa>
+    <elementoDespesa>Equipamentos e Material Permanente</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.031.2710.2000.4.4.90.52.00</dotacao>
+    <valor>2002098</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>122</idSubFuncao>
+    <subFuncao>Administração Geral</subFuncao>
+    <idPrograma>2920</idPrograma>
+    <programa>Divulgação Oficial</programa>
+    <idProjetoAtividade>2003</idProjetoAtividade>
+    <projetoAtividade>Câmara Municipal - Comunicação</projetoAtividade>
+    <idDespesa>33903900</idDespesa>
+    <despesa>Outros Serviços de Terceiros -Pessoa Jurídica</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>39</idElementoDespesa>
+    <elementoDespesa>Outros Serviços de Terceiros - Pessoa Jurídica</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.122.2920.2003.3.3.90.39.00</dotacao>
+    <valor>38529125</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>10</idUnidade>
+    <unidade>Câmara Municipal</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>126</idSubFuncao>
+    <subFuncao>Tecnologia da Informação</subFuncao>
+    <idPrograma>2620</idPrograma>
+    <programa>Sistema de informação e processamento de dados</programa>
+    <idProjetoAtividade>2171</idProjetoAtividade>
+    <projetoAtividade>Implantação e Operação de Sistemas de Informação e Comunicação</projetoAtividade>
+    <idDespesa>33903900</idDespesa>
+    <despesa>Outros Serviços de Terceiros -Pessoa Jurídica</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>39</idElementoDespesa>
+    <elementoDespesa>Outros Serviços de Terceiros - Pessoa Jurídica</elementoDespesa>
+    <idFonteDespesa>00</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal</fonteDespesa>
+    <dotacao>09.10.01.126.2620.2171.3.3.90.39.00</dotacao>
+    <valor>950000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>20</idUnidade>
+    <unidade>Fundo Especial de Despesas da Câmara Municipal de São Paulo</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2008</idProjetoAtividade>
+    <projetoAtividade>Fundo Especial de Despesas da Câmara Municipal de São Paulo - FECAM</projetoAtividade>
+    <idDespesa>33903000</idDespesa>
+    <despesa>Material de Consumo</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>30</idElementoDespesa>
+    <elementoDespesa>Material de Consumo</elementoDespesa>
+    <idFonteDespesa>08</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal - Recursos Vinculados</fonteDespesa>
+    <dotacao>09.20.01.031.2710.2008.3.3.90.30.08</dotacao>
+    <valor>1306000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>20</idUnidade>
+    <unidade>Fundo Especial de Despesas da Câmara Municipal de São Paulo</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2008</idProjetoAtividade>
+    <projetoAtividade>Fundo Especial de Despesas da Câmara Municipal de São Paulo - FECAM</projetoAtividade>
+    <idDespesa>33903900</idDespesa>
+    <despesa>Outros Serviços de Terceiros -Pessoa Jurídica</despesa>
+    <idCategoriaDespesa>3</idCategoriaDespesa>
+    <categoriaDespesa>Despesas Correntes</categoriaDespesa>
+    <idGrupoDespesa>3</idGrupoDespesa>
+    <grupoDespesa>OUTRAS DESPESAS CORRENTES</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>39</idElementoDespesa>
+    <elementoDespesa>Outros Serviços de Terceiros - Pessoa Jurídica</elementoDespesa>
+    <idFonteDespesa>08</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal - Recursos Vinculados</fonteDespesa>
+    <dotacao>09.20.01.031.2710.2008.3.3.90.39.08</dotacao>
+    <valor>3500000</valor>
+  </linha>
+  <linha>
+    <idOrgao>09</idOrgao>
+    <orgao>Câmara Municipal</orgao>
+    <idUnidade>20</idUnidade>
+    <unidade>Fundo Especial de Despesas da Câmara Municipal de São Paulo</unidade>
+    <idFuncao>01</idFuncao>
+    <funcao>Legislativa</funcao>
+    <idSubFuncao>031</idSubFuncao>
+    <subFuncao>Ação Legislativa</subFuncao>
+    <idPrograma>2710</idPrograma>
+    <programa>Processo Legislativo</programa>
+    <idProjetoAtividade>2008</idProjetoAtividade>
+    <projetoAtividade>Fundo Especial de Despesas da Câmara Municipal de São Paulo - FECAM</projetoAtividade>
+    <idDespesa>44905200</idDespesa>
+    <despesa>Equipamentos e Material Permanente</despesa>
+    <idCategoriaDespesa>4</idCategoriaDespesa>
+    <categoriaDespesa>Despesas de Capital</categoriaDespesa>
+    <idGrupoDespesa>4</idGrupoDespesa>
+    <grupoDespesa>INVESTIMENTOS</grupoDespesa>
+    <idModalidadeDespesa>90</idModalidadeDespesa>
+    <modalideDespesa>Aplicações Diretas</modalideDespesa>
+    <idElementoDespesa>52</idElementoDespesa>
+    <elementoDespesa>Equipamentos e Material Permanente</elementoDespesa>
+    <idFonteDespesa>08</idFonteDespesa>
+    <fonteDespesa>Tesouro Municipal - Recursos Vinculados</fonteDespesa>
+    <dotacao>09.20.01.031.2710.2008.4.4.90.52.08</dotacao>
+    <valor>4316000</valor>
+  </linha>
+</CMSP>
