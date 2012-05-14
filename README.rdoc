@@ -10,7 +10,7 @@ Este site começou a ser feito durante o Hackaton da Câmara Municipal de São P
 
 == Requisitos e Instalação
 
-  Estamos trabalhando no projeto e em breve teremos todos os procedimento descritos.
+  Estamos trabalhando no projeto e em breve teremos todos os procedimentos descritos.
 
 == TODO
 
