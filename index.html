@@ -34,30 +34,18 @@
 <body>
 	
 <script>
+	Object.prototype.keys = function() {
+		var keys = [];
+		for (var key in json)
+			keys.push(key);
+		return keys;
+	};
+	
 	
 	var data = (function() {
-	        var maxt = 2, // número de iterações
-	            maxn = 4, // número máximo de entraaas
-	            maxl = 4, // número máximo de saídas
-	            maxv = 2, // valor do nó (valor genérico)
-	            times = [],
-	            allLinks = [],
-	            counter = 0,
-	            addNodes = function() {
-									var r = Math.random();
-	                var ncount = r * maxn + 1;
-	                var nodes = d3.range(0, 10).map(function(n) {
-													alert(n);
-	                        return {
-	                            id: counter++,
-	                            nodeName: "Node " + n,
-	                            nodeValue: 0,
-	                            incoming: []
-	                        }
-	                    });
-	                times.push(nodes);
-	                return nodes;
-	            },
+	            var times = [];
+	            var allLinks = [];
+	            var counter = 0;
 							addRoot = function() {
 	                var nodes = d3.range(0, 1).map(function(n) {
                        return {
@@ -70,31 +58,34 @@
 	                times.push(nodes);
 	                return nodes;
 	            },
+							addFirstIteration = function() {
+	                var nodes = d3.range(0, json.keys().length).map(function(n) {
+	                  return {
+	                    id: counter++,
+	                    nodeName: "Node " + n,
+	                    nodeValue: json[json.keys()[n]],
+	                    incoming: []
+	                  };
+	              	});
+	                times.push(nodes);
+	                return nodes;
+	            },
 	            addNext = function() {
 	                var current = times[times.length-1];
-	                var nextt = addNodes();
+	                var nextt = addFirstIteration();
 	                // make links
 	                current.forEach(function(n) {
-	                    var linkCount = Math.min(~~(Math.random() * maxl + 1), nextt.length),
-	                        breaks = d3.range(linkCount-1)
-	                            .map(function() { return Math.random() * n.nodeValue })
-	                            .sort(d3.ascending),
-	                        links = {},
-	                        target, link, x;
-	                    for (x=0; x<linkCount; x++) {
-	                        do { 
-	                            target = nextt[~~(Math.random() * nextt.length)];
-	                        } while (target.id in links);
-	                        // add link
-	                        link = {
-	                            source: n.id,
-	                            target: target.id,
-	                            value: (breaks[x] || n.nodeValue) - (breaks[x-1] || 0)
-	                        };
-	                        links[target.id] = link;
-	                        allLinks.push(link);
-	                        target.nodeValue += link.value;
-	                    }
+                    var links = {};
+                    for (var x = 0; x < nextt.length - 1; x++) {
+											var target = nextt[x];
+                      var link = {
+                          source: n.id,
+                          target: target.id,
+                          value: target.nodeValue
+                      };
+                      links[target.id] = link;
+                      allLinks.push(link);
+                    }
 	                });
 	                // prune next
 	                times[times.length-1] = nextt.filter(function(n) { return n.nodeValue });

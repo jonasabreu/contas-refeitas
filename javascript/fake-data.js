@@ -1,5 +1,5 @@
 var total = 316380706.41;
-var data = {
+var json = {
     "Folha De Pagamento Cargos Em Comissão 19": 76300699.77000004,
     "Folha De Pagamento Efetivos": 74950806.35,
     "Instituto Nacional De Seguro Social - Inss": 25312646.82,
