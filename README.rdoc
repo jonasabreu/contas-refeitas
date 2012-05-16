@@ -14,6 +14,6 @@ Este site começou a ser feito durante o Hackaton da Câmara Municipal de São P
 
 == TODO
 
-	- Criar um server que irá implementar a api.spec
-	- Criar a primeira visualização utilizando o D3
-	- Criar dados fake para que back-end e front-end possam andar independentemente (DONE)
+* Criar um server que irá implementar a api.spec
+* Criar a primeira visualização utilizando o D3
+* Criar dados fake para que back-end e front-end possam andar independentemente (DONE)
