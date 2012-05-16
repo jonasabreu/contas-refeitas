@@ -14,6 +14,7 @@ repositories {
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 dependencies {
+	compile 'com.thoughtworks.xstream:xstream:1.4.2'
 	compile ('br.com.caelum:vraptor:3.4.0'){
 		exclude group: 'org.springframework'
 	}
