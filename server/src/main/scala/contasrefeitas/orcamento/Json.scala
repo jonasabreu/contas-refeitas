@@ -7,10 +7,9 @@ import sjson.json.Serializer.{ SJSON => serializer }
 import br.com.caelum.vraptor.ioc.Component
 
 @Component
-class Json(req : HttpServletRequest, res : HttpServletResponse, result : Result) extends View {
+class Json(res : HttpServletResponse, result : Result) extends View {
 
-  def render(name : String) : Unit = {
-    val obj = req.getAttribute(name)
+  def render(obj : Seq[(String, Double)]) : Unit = {
     res.setContentType("application/json")
     res.getOutputStream.write(serializer.out(obj))
     result.use(nothing)

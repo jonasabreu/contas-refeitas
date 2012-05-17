@@ -12,23 +12,13 @@ class Controller(orcamento : Orcamento, result : Result) {
 
   @Get(Array("/subfuncao"))
   def subfuncao() = {
-    val subfuncoes = (orcamento.original \\ "subFuncao").map(_.text).distinct
-
-    val agrupamento = subfuncoes.map(sf => {
-      val total = 0
-
-      val fichas = (orcamento.original \\ "ficha" filter (ficha => (ficha \ "subFuncao").map(_.text).head == sf))
-
-      (sf, (fichas \\ "vlrPago").foldLeft(0.0)(_ + _.text.replaceAll(",", ".").toDouble))
-    })
-
-    result.include("agrupamento", agrupamento)
-    result.use(classOf[Json]).render("agrupamento")
+    result.use(classOf[Json]).render(orcamento.joinUnder("subFuncao"))
   }
+
+  @Get(Array("/natureza"))
+  def natureza() = {
+    result.use(classOf[Json]).render(orcamento.joinUnder("natureza"))
+  }
+
 }
 
-object Runner {
-  def main(args : Array[String]) {
-    print(new Controller(new Orcamento, null).subfuncao)
-  }
-}
