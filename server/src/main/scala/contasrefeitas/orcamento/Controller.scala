@@ -10,20 +10,13 @@ import br.com.caelum.vraptor.view.Results
 @Resource
 class Controller(orcamento : Orcamento, result : Result) {
 
-  @Get(Array("/subfuncao"))
-  def subfuncao() = {
-    result.use(classOf[Json]).render(orcamento.joinUnder(_.subfuncao))
+  @Get(Array("/{dado}"))
+  def subfuncao(dado : String) = {
+    result.use(classOf[Json]).render(orcamento.joinUnder(dado match {
+      case "subfuncao" => _.subfuncao
+      case "natureza" => _.natureza
+      case "destino" => _.destino
+    }))
   }
-
-  @Get(Array("/natureza"))
-  def natureza() = {
-    result.use(classOf[Json]).render(orcamento.joinUnder(_.natureza))
-  }
-
-  @Get(Array("/destino"))
-  def destino() = {
-    result.use(classOf[Json]).render(orcamento.joinUnder(_.destino))
-  }
-
 }
 

@@ -10,9 +10,7 @@ import scala.collection.mutable.ListBuffer
 @ApplicationScoped
 class Orcamento {
 
-  val original = XML.load(classOf[Orcamento].getResourceAsStream("/cmsp/gastos-2011.xml"))
-
-  val gastos = parse(original \\ "ficha")
+  val gastos = parse(XML.load(classOf[Orcamento].getResourceAsStream("/cmsp/gastos-2011.xml")) \\ "ficha")
 
   def parse(nodes : NodeSeq) : List[Gasto] = {
     val buffer = ListBuffer[Gasto]()
@@ -40,9 +38,3 @@ class Orcamento {
 }
 
 case class Gasto(subfuncao : String, natureza : String, destino : String, valor : Double)
-
-object Runner {
-  def main(args : Array[String]) {
-    print(new Orcamento().joinUnder(_.destino))
-  }
-}
