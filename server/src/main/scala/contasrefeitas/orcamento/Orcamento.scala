@@ -33,7 +33,7 @@ class Orcamento {
     val items = gastos.map(f).distinct
     items.map(item => {
       (item, gastos.filter(elem => f(elem) == item).foldLeft(0.0)(_ + _.valor))
-    })
+    }).sortWith((a, b) => a._2 > b._2)
   }
 }
 

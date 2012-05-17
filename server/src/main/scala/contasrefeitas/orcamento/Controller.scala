@@ -6,6 +6,7 @@ import scala.xml.Text
 import scala.xml.Text
 import br.com.caelum.vraptor.Result
 import br.com.caelum.vraptor.view.Results
+import br.com.caelum.vraptor.Path
 
 @Resource
 class Controller(orcamento : Orcamento, result : Result) {
@@ -18,5 +19,9 @@ class Controller(orcamento : Orcamento, result : Result) {
       case "destino" => _.destino
     }))
   }
+
+  @Get
+  @Path(value = (Array("/favicon.ico")), priority = 1)
+  def ignoreFavicon = {}
 }
 
