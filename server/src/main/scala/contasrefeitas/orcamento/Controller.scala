@@ -12,12 +12,17 @@ class Controller(orcamento : Orcamento, result : Result) {
 
   @Get(Array("/subfuncao"))
   def subfuncao() = {
-    result.use(classOf[Json]).render(orcamento.joinUnderSubFuncao)
+    result.use(classOf[Json]).render(orcamento.joinUnder(_.subfuncao))
   }
 
   @Get(Array("/natureza"))
   def natureza() = {
-    result.use(classOf[Json]).render(orcamento.joinUnderNatureza)
+    result.use(classOf[Json]).render(orcamento.joinUnder(_.natureza))
+  }
+
+  @Get(Array("/destino"))
+  def destino() = {
+    result.use(classOf[Json]).render(orcamento.joinUnder(_.destino))
   }
 
 }

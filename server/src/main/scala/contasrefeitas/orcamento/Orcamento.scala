@@ -20,10 +20,10 @@ class Orcamento {
       val subfuncao = (node \ "subFuncao").headOption.getOrElse(null).text
       val natureza = (node \ "natureza").headOption.getOrElse(null).text
       (node \\ "fornecedor").foreach(node => {
-        val fornecedor = (node.attribute("nome")).head.text
+        val destino = (node.attribute("nome")).head.text
         (node \\ "vlrPago").foreach(node => {
           val valor = node.text.replaceAll(",", ".").toDouble
-          val gasto = Gasto(subfuncao, natureza, fornecedor, valor)
+          val gasto = Gasto(subfuncao, natureza, destino, valor)
           buffer += gasto
         })
       })
@@ -31,19 +31,18 @@ class Orcamento {
     buffer.toList
   }
 
-  def joinUnderNatureza : Seq[(String, Double)] = {
-    null
-  }
-
-  def joinUnderSubFuncao : Seq[(String, Double)] = {
-
+  def joinUnder(f : (Gasto) => String) : Seq[(String, Double)] = {
+    val items = gastos.map(f).distinct
+    items.map(item => {
+      (item, gastos.filter(elem => f(elem) == item).foldLeft(0.0)(_ + _.valor))
+    })
   }
 }
 
-case class Gasto(subfuncao : String, natureza : String, fornecedor : String, valor : Double)
+case class Gasto(subfuncao : String, natureza : String, destino : String, valor : Double)
 
 object Runner {
   def main(args : Array[String]) {
-    print(new Orcamento().gastos.size)
+    print(new Orcamento().joinUnder(_.destino))
   }
 }
