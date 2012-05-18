@@ -12,7 +12,7 @@ case class Gasto(subfuncao : String, natureza : String, destino : String, valor 
 @ApplicationScoped
 class Orcamento {
 
-  private val max = 10
+  private val default = 10
 
   val gastos = parse(XML.load(classOf[Orcamento].getResourceAsStream("/cmsp/gastos-2011.xml")) \\ "ficha")
 
@@ -20,19 +20,21 @@ class Orcamento {
     def soma = list.foldLeft(0.0)(_ + _.valor)
   }
 
-  def join(list : List[(Gasto) => String]) : AnyRef = join(gastos, list)
+  def join(list : List[(Gasto) => String], limit : Int) : AnyRef = join(gastos, list, if (limit == 0) default else limit)
 
-  private def join(gastos : List[Gasto], filters : List[(Gasto) => String]) : List[_] = {
+  private def join(gastos : List[Gasto], filters : List[(Gasto) => String], limit : Int) : List[_] = {
     if (!filters.isEmpty) {
       val items = gastos.map(filters.head).distinct
-      items.map(item => {
+      val (maiores, outros) = items.map(item => {
         val filteredItems = gastos.filter(elem => filters.head(elem) == item)
-        val innerItems = join(filteredItems, filters.tail)
+        val innerItems = join(filteredItems, filters.tail, limit)
         innerItems match {
           case List() => List(item, filteredItems.soma)
           case _ => List(item, List(filteredItems.soma, innerItems))
         }
-      }).sortWith((a, b) => num(a) > num(b))
+      }).sortWith((a, b) => num(a) > num(b)).splitAt(limit)
+
+      maiores ++ List(List("Outros", outros.foldLeft(0.0)((a, b) => a + num(b))))
     } else {
       List()
     }
