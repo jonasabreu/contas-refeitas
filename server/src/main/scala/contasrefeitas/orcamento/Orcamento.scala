@@ -38,6 +38,7 @@ class Orcamento {
         maiores
       else
         maiores ++ List(List("Outros", outros.foldLeft(0.0)((a, b) => a + num(b))))
+
     } else {
       List()
     }
@@ -53,18 +54,16 @@ class Orcamento {
   private def parse(nodes : NodeSeq) : List[Gasto] = {
     val buffer = ListBuffer[Gasto]()
     nodes.foreach(node => {
-      val subfuncao = (node \ "subFuncao").headOption.getOrElse(null).text
-      val natureza = (node \ "natureza").headOption.getOrElse(null).text
+      val subfuncao = (node \ "subFuncao").head.text
+      val natureza = (node \ "natureza").head.text
       (node \\ "fornecedor").foreach(node => {
         val destino = (node.attribute("nome")).head.text
         (node \\ "vlrPago").foreach(node => {
           val valor = node.text.replaceAll(",", ".").toDouble
-          val gasto = Gasto(subfuncao, natureza, destino, valor)
-          buffer += gasto
+          buffer += Gasto(subfuncao, natureza, destino, valor)
         })
       })
     })
     buffer.toList
   }
-
 }
