@@ -12,12 +12,17 @@ import br.com.caelum.vraptor.Path
 class Controller(orcamento : Orcamento, result : Result) {
 
   @Get(Array("/{dado}"))
-  def subfuncao(dado : String) = {
+  def dados(dado : String) = {
     result.use(classOf[Json]).render(orcamento.joinUnder(dado match {
       case "subfuncao" => _.subfuncao
       case "natureza" => _.natureza
       case "destino" => _.destino
     }))
+  }
+
+  @Get(Array("/subfuncao/natureza"))
+  def subfuncao(dado : String) = {
+    result.use(classOf[Json]).render(orcamento.join(_.subfuncao, _.natureza))
   }
 
   @Get
