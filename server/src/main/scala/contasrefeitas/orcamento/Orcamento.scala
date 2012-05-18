@@ -34,7 +34,10 @@ class Orcamento {
         }
       }).sortWith((a, b) => num(a) > num(b)).splitAt(limit)
 
-      maiores ++ List(List("Outros", outros.foldLeft(0.0)((a, b) => a + num(b))))
+      if (outros.isEmpty)
+        maiores
+      else
+        maiores ++ List(List("Outros", outros.foldLeft(0.0)((a, b) => a + num(b))))
     } else {
       List()
     }
