@@ -3,11 +3,13 @@
 	<title>Contas Refeitas</title>
 	<script src="http://d3js.org/d3.v2.js"></script>
 	<script src="javascript/fake-data.js"></script>
+	<link type="text/css" rel="stylesheet" media="screen" href="bootstrap/css/bootstrap.css"></script>
 </head>
 
 <style type="text/css">
 	body {
-	    margin: 1em;
+	  margin:0px;
+		font-family: Verdana;
 	}
     
 	.node {
@@ -28,19 +30,41 @@
 	.node {
 	    stroke: none;
 	}
-
+	
+	header {
+		background-color: #caeefc;
+		padding: 50px 50px;
+		height: 200px;
+		width: 900px;
+		margin: 0px auto;
+		border-radius: 25px;
+	}
+	header h2 {
+		font-size: 40px;
+		font-weight: normal;
+		display: block;
+		float: right;
+		line-height: 42px;
+		width: 70%;
+	}
+	header h1 {
+		display: block;
+		float: left;
+		width: 20%;
+	}
+	
+	article {
+		 margin: 50px;
+	}
 </style>
 
 <body>
-	
+	<header>
+		<h1>Contas Refeitas</h1>
+		<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.<h2>
+	</header>
+	<article>
 <script>
-	Object.prototype.keys = function() {
-		var keys = [];
-		for (var key in json)
-			keys.push(key);
-		return keys;
-	};
-	
 	
 	var data = (function() {
 	            var times = [];
@@ -59,11 +83,16 @@
 	                return nodes;
 	            },
 							addFirstIteration = function() {
-	                var nodes = d3.range(0, json.keys().length).map(function(n) {
+								var keys = [];
+								for (var key in json)
+									keys.push(key);
+	                var nodes = d3.range(0, keys.length).map(function(n) {
+										var key = keys[n];
+										var value = json[key];
 	                  return {
 	                    id: counter++,
 	                    nodeName: "Node " + n,
-	                    nodeValue: json[json.keys()[n]],
+	                    nodeValue: value,
 	                    incoming: []
 	                  };
 	              	});
@@ -186,7 +215,7 @@
 	        .interpolate('basis');
 
 	// root
-	var vis = d3.select("body")
+	var vis = d3.select("article")
 	  .append("svg:svg")
 	    .attr("width", w)
 	    .attr("height", h);
@@ -220,6 +249,35 @@
 	            .attr('height', function(n) { return y(n.nodeValue) })
 	          .append('svg:title')
 	            .text(function(n) { return n.nodeName });
+					console.log()
+					nodes.append('svg:text')
+						.attr('fill', 'white')
+            .attr('y', function(n, i) {
+                return (y(n.offsetValue) + (i * padding) + 13 );
+            })
+						.attr('x', x.rangeBand() / 4)
+						.text(function(n) { 
+							console.log(n.nodeValue);
+							var value = n.nodeValue.toFixed(2);
+							var array = value.toString().split('.');
+							var inteiro = array[0];
+							var inteiro_legivel = "";
+							var c = 1;
+							for (var i=inteiro.length; i>0; i--) {
+							  inteiro_legivel += inteiro[i-1];
+							  if ( (c) % 3 == 0 && i > 1) {
+							    inteiro_legivel += "."
+							  }
+							  c++;
+							}
+							var s = "";
+							var i = inteiro_legivel.length;
+							while (i>0) {
+							  s += inteiro_legivel.substring(i-1,i);
+							  i--;
+							}
+							return "R$" + s + "," + array[1];
+						});
 	    }, (first ? 0 : delay));
 
 	    var linkLine = function(start) {
@@ -281,5 +339,8 @@
 
 	
 </script>	
+	</article>
+	<footer>
+	</footer>
 </body>
 </html>
