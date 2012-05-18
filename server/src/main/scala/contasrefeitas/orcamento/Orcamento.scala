@@ -14,30 +14,29 @@ class Orcamento {
 
   val gastos = parse(XML.load(classOf[Orcamento].getResourceAsStream("/cmsp/gastos-2011.xml")) \\ "ficha")
 
-  def joinUnder(gastos : List[Gasto], f : (Gasto) => String) = {
-    val items = gastos.map(f).distinct
-    items.map(item => {
-      (item, gastos.filter(elem => f(elem) == item).foldLeft(0.0)(_ + _.valor))
-    }).sortWith((a, b) => a._2 > b._2)
+  implicit def addSoma(list : List[Gasto]) = new {
+    def soma = list.foldLeft(0.0)(_ + _.valor)
   }
 
-  def joinUnder(f : (Gasto) => String) : Seq[(String, Double)] = {
-    joinUnder(gastos, f)
+  def join(list : List[(Gasto) => String]) : AnyRef = join(gastos, list)
+
+  private def join(gastos : List[Gasto], filters : List[(Gasto) => String]) : AnyRef = {
+    if (!filters.isEmpty) {
+      val items = gastos.map(filters.head).distinct
+      items.map(item => {
+        val filteredItems = gastos.filter(elem => filters.head(elem) == item)
+        val innerItems = join(filteredItems, filters.tail)
+        innerItems match {
+          case List() => List(item, filteredItems.soma)
+          case _ => List(item, List(filteredItems.soma, innerItems))
+        }
+      })
+    } else {
+      List()
+    }
   }
 
-  //  def join(accessors : ((Gasto) => String)*) = {
-  //
-  //  }
-
-  def join(primaria : (Gasto) => String, secundaria : (Gasto) => String) = {
-    val items = gastos.map(primaria).distinct
-    items.map(item => {
-      val filteredItems = gastos.filter(elem => primaria(elem) == item)
-      (item, (filteredItems.foldLeft(0.0)(_ + _.valor), joinUnder(filteredItems, secundaria)))
-    })
-  }
-
-  def parse(nodes : NodeSeq) : List[Gasto] = {
+  private def parse(nodes : NodeSeq) : List[Gasto] = {
     val buffer = ListBuffer[Gasto]()
     nodes.foreach(node => {
       val subfuncao = (node \ "subFuncao").headOption.getOrElse(null).text
