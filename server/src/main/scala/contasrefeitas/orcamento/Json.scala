@@ -9,7 +9,7 @@ import br.com.caelum.vraptor.ioc.Component
 @Component
 class Json(res : HttpServletResponse, result : Result) extends View {
 
-  def render(obj : Seq[(String, Double)]) : Unit = {
+  def render(obj : AnyRef) : Unit = {
     res.setContentType("application/json")
     res.getOutputStream.write(serializer.out(obj))
     result.use(nothing)
