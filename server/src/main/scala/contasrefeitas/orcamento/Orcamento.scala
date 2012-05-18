@@ -12,6 +12,8 @@ case class Gasto(subfuncao : String, natureza : String, destino : String, valor 
 @ApplicationScoped
 class Orcamento {
 
+  private val max = 10
+
   val gastos = parse(XML.load(classOf[Orcamento].getResourceAsStream("/cmsp/gastos-2011.xml")) \\ "ficha")
 
   implicit def addSoma(list : List[Gasto]) = new {
@@ -20,7 +22,7 @@ class Orcamento {
 
   def join(list : List[(Gasto) => String]) : AnyRef = join(gastos, list)
 
-  private def join(gastos : List[Gasto], filters : List[(Gasto) => String]) : AnyRef = {
+  private def join(gastos : List[Gasto], filters : List[(Gasto) => String]) : List[_] = {
     if (!filters.isEmpty) {
       val items = gastos.map(filters.head).distinct
       items.map(item => {
@@ -30,9 +32,16 @@ class Orcamento {
           case List() => List(item, filteredItems.soma)
           case _ => List(item, List(filteredItems.soma, innerItems))
         }
-      })
+      }).sortWith((a, b) => num(a) > num(b))
     } else {
       List()
+    }
+  }
+
+  private def num(item : List[Any]) : Double = {
+    item(1) match {
+      case n : Double => n
+      case n : List[_] => n(0).asInstanceOf[Double]
     }
   }
 
