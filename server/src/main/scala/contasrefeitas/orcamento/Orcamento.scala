@@ -20,6 +20,8 @@ class Orcamento {
     def soma = list.foldLeft(0.0)(_ + _.valor)
   }
 
+  def total = gastos.soma
+
   def join(list : List[(Gasto) => String], limit : Int) : AnyRef = join(gastos, list, if (limit == 0) default else limit)
 
   private def join(gastos : List[Gasto], filters : List[(Gasto) => String], limit : Int) : List[_] = {

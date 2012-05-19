@@ -2,8 +2,8 @@
 <head>
 	<title>Contas Refeitas</title>
 	<script src="http://d3js.org/d3.v2.js"></script>
-	<script src="javascript/fake-data.js"></script>
-	<link type="text/css" rel="stylesheet" media="screen" href="bootstrap/css/bootstrap.css"></script>
+	<script src="/javascript/fake-data.js"></script>
+	<link type="text/css" rel="stylesheet" media="screen" href="/bootstrap/css/bootstrap.css"></script>
 </head>
 
 <style type="text/css">
@@ -69,6 +69,9 @@
 		<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.<h2>
 	</header>
 	<article>
+	<script>
+		var total = ${total};
+	</script>
 <script>
 	
 	var data = (function() {

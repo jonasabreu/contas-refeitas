@@ -9,19 +9,24 @@ import br.com.caelum.vraptor.view.Results
 import br.com.caelum.vraptor.Path
 
 @Resource
-class Controller(orcamento : Orcamento, result : Result) {
+class Main(orcamento : Orcamento, result : Result) {
 
-  @Get(Array("/{filtro}"))
+  @Get(Array("/"))
+  def index() = {
+    result.include("total", orcamento.total)
+  }
+
+  @Get(Array("/filtros/{filtro}"))
   def filtroSimples(filtro : String, limit : Int) = {
     render(List(filterFor(filtro)), limit)
   }
 
-  @Get(Array("/{filtro1}/{filtro2}"))
+  @Get(Array("/filtros/{filtro1}/{filtro2}"))
   def filtroDuplo(filtro1 : String, filtro2 : String, limit : Int) = {
     render(List(filterFor(filtro1), filterFor(filtro2)), limit)
   }
 
-  @Get(Array("/{filtro1}/{filtro2}/{filtro3}"))
+  @Get(Array("/filtros/{filtro1}/{filtro2}/{filtro3}"))
   def filtroTriplo(filtro1 : String, filtro2 : String, filtro3 : String, limit : Int) = {
     render(List(filterFor(filtro1), filterFor(filtro2), filterFor(filtro3)), limit)
   }

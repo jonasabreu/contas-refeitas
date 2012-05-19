@@ -1,4 +1,4 @@
-var total = 316380706.41;
+
 var json = {
     "Folha De Pagamento Cargos Em Comissão 19": 76300699.77000004,
     "Folha De Pagamento Efetivos": 74950806.35,
