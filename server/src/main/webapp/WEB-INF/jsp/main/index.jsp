@@ -3,7 +3,11 @@
 	<title>Contas Refeitas</title>
 	<script src="http://d3js.org/d3.v2.js"></script>
 	<script src="/javascript/fake-data.js"></script>
-	<link type="text/css" rel="stylesheet" media="screen" href="/bootstrap/css/bootstrap.css"></script>
+	<script src="/bootstrap/js/bootstrap.js"></script>
+	<script src="/bootstrap/js/bootstrap-modal.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+	<link type="text/css" rel="stylesheet" media="screen" href="/bootstrap/css/bootstrap.css">
 </head>
 
 <style type="text/css">
@@ -345,10 +349,37 @@
 	update(true);
 	updateNext();
 
+	$('#myModal').click(function() {
+		$('#myModal').modal({
+		  keyboard: false
+		});	
+	});
 	
 </script>	
 	</article>
 	<footer>
 	</footer>
+	
+	<a class="btn" data-toggle="modal" href="#myModal" >Launch Modal</a>
+	
+	<div class="modal" id="myModal">
+	  <div class="modal-header">
+	    <button class="close" data-dismiss="modal">×</button>
+	    <h3>Junte-se a causa!</h3>
+	  </div>
+	  <div class="modal-body">
+	    <p>
+	      Os dados que deveriam existir aqui
+	      <a href="http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm">
+	        já deviam ter sido publicados pelo TCM
+	      </a>, mas ainda não foram. <a href="https://www.causes.com/causes/766331-liberacao-dos-dados-pelo-tribunal-de-contas" target="_blank">
+	      	Junte-se a essa causa!
+	      </a>
+	    </p>
+	  </div>
+	  <div class="modal-footer">
+	    <a href="#" class="btn">Close</a>
+	  </div>
+	</div>
 </body>
 </html>
