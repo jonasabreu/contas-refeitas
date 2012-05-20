@@ -376,9 +376,14 @@
 	      	Junte-se a essa causa!
 	      </a>
 	    </p>
+	    <p>
+	      <div class='sbutton twitter'>
+		    <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" >Tweet</a>
+	      </div>
+	    </p>
 	  </div>
 	  <div class="modal-footer">
-	    <a href="#" class="btn">Close</a>
+	    <a href="#" class="btn">Fechar</a>
 	  </div>
 	</div>
 </body>
