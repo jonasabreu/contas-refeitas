@@ -18,18 +18,18 @@ var createAlluvialData = (function() {
 		var keys = [];
 		for (var key in json)
 			keys.push(key);
-		    var nodes = d3.range(0, keys.length).map(function(n) {
-				var key = keys[n];
-				var value = json[key];
-	        return {
-	          id: counter++,
-	          nodeName: "Node " + n,
-	          nodeValue: value,
-	          incoming: []
-	        };
-	    	});
-	     times.push(nodes);
-	     return nodes;
+    var nodes = d3.range(0, keys.length).map(function(n) {
+		var key = keys[n];
+		var value = json[key];
+       return {
+         id: counter++,
+         nodeName: "Node " + n,
+         nodeValue: value,
+         incoming: []
+       };
+   	});
+	  times.push(nodes);
+	  return nodes;
 	},
 	addNext = function() {
 		var current = times[times.length-1];
