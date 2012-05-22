@@ -30,10 +30,8 @@ class Orcamento {
       val (maiores, outros) = items.map(item => {
         val filteredItems = gastos.filter(elem => filters.head(elem) == item)
         val innerItems = join(filteredItems, filters.tail, limit)
-        innerItems match {
-          case List() => List(item, filteredItems.soma)
-          case _ => List(item, List(filteredItems.soma, innerItems))
-        }
+
+        List(item, List(filteredItems.soma, innerItems))
       }).sortWith((a, b) => num(a) > num(b)).splitAt(limit)
 
       if (outros.isEmpty)
