@@ -80,7 +80,7 @@
 <script>
 	$(document).ready(function() {
 		$.ajax({
-			url: "/filtros/destino/natureza",
+			url: "/filtros/destino/natureza", //?limit=20
 			method: "GET",
 			success: function(data) {
 				json = data;
@@ -88,7 +88,7 @@
 			}
 		});
 	});
-	var json;
+	var json, data;
 	$("rect").live('click', function() {
 		$("article svg").remove();
 		var index = parseInt($("title", $(this)).text());
@@ -97,7 +97,7 @@
 	});
 	
 	function makeTheMagicHappen(json) {
-		var data = createAlluvialData(json);
+		data = createAlluvialData(json);
 
 		var nodeMap = createNodeMap(data);
 
@@ -110,7 +110,7 @@
 		var maxv = d3.max(data, function(t) { 
 			return d3.sum(t, function(n) { 
 				return n.nodeValue;
-				});
+			});
 		});
 
 		/* Make Vis */
