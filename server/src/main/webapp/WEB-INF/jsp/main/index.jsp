@@ -74,9 +74,6 @@
 		<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.<h2>
 	</header>
 	<article>
-	<script>
-		var total = ${total};
-	</script>
 <script>
 	$(document).ready(function() {
 		$.ajax({
@@ -159,15 +156,15 @@
 	
 	<div class="modal" id="myModal">
 	  <div class="modal-header">
-	    <button class="close" data-dismiss="modal">×</button>
+	    <button class="close" data-dismiss="modal">ï¿½</button>
 	    <h3>Junte-se a causa!</h3>
 	  </div>
 	  <div class="modal-body">
 	    <p>
 	      Os dados que deveriam existir aqui
 	      <a href="http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm">
-	        já deviam ter sido publicados pelo TCM
-	      </a>, mas ainda não foram. <a href="https://www.causes.com/causes/766331-liberacao-dos-dados-pelo-tribunal-de-contas" target="_blank">
+	        jï¿½ deviam ter sido publicados pelo TCM
+	      </a>, mas ainda nï¿½o foram. <a href="https://www.causes.com/causes/766331-liberacao-dos-dados-pelo-tribunal-de-contas" target="_blank">
 	      	Junte-se a essa causa!
 	      </a>
 	    </p>

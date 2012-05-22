@@ -13,7 +13,6 @@ class Main(orcamento : Orcamento, result : Result) {
 
   @Get(Array("/"))
   def index() = {
-    result.include("total", orcamento.total)
   }
 
   @Get(Array("/filtros/{filtro}"))
