@@ -32,7 +32,6 @@ function update(first, data, t, vis, x, y, delay, padding, nodeMap, line) {
           })
 					.attr('x', x.rangeBand() / 4)
 					.text(function(n) { 
-						console.log(n.nodeValue);
 						var value = n.nodeValue.toFixed(2);
 						var array = value.toString().split('.');
 						var inteiro = array[0];

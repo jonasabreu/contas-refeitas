@@ -19,7 +19,7 @@ var createAlluvialData = (function(json) {
 		var list = json[n][1];
        return {
          id: counter++,
-         nodeName: "Node " + n,
+         nodeName: n,
          nodeValue: list[0],
          incoming: []
        };

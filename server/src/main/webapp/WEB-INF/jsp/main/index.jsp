@@ -82,14 +82,21 @@
 		$.ajax({
 			url: "/filtros/destino/natureza",
 			method: "GET",
-			success: function(json) {
-				makeTheMagicHappen(json);
+			success: function(data) {
+				json = data;
+				makeTheMagicHappen(data);
 			}
 		});
 	});
+	var json;
+	$("rect").live('click', function() {
+		$("article svg").remove();
+		var index = parseInt($("title", $(this)).text());
+		total = json[index][1][0];
+		makeTheMagicHappen(json[index][1][1]);
+	});
 	
 	function makeTheMagicHappen(json) {
-		
 		var data = createAlluvialData(json);
 
 		var nodeMap = createNodeMap(data);
