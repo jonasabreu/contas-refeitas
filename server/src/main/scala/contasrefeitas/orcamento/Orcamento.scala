@@ -5,8 +5,12 @@ import scala.xml.XML
 import scala.xml.Elem
 import scala.xml.NodeSeq
 import scala.collection.mutable.ListBuffer
+import scala.reflect.BeanInfo
 
 case class Gasto(subfuncao : String, natureza : String, destino : String, valor : Double)
+
+@BeanInfo
+case class Child(label : String, value : Double, childs : List[Child])
 
 @Component
 @ApplicationScoped
@@ -22,22 +26,22 @@ class Orcamento {
 
   def total = gastos.soma
 
-  def join(list : List[(Gasto) => String], limit : Int) : AnyRef = join(gastos, list, if (limit == 0) default else limit)
+  def join(list : List[(Gasto) => String], limit : Int) : Child = Child("root", gastos.soma, join(gastos, list, if (limit == 0) default else limit))
 
-  private def join(gastos : List[Gasto], filters : List[(Gasto) => String], limit : Int) : List[_] = {
+  private def join(gastos : List[Gasto], filters : List[(Gasto) => String], limit : Int) : List[Child] = {
     if (!filters.isEmpty) {
       val items = gastos.map(filters.head).distinct
       val (maiores, outros) = items.map(item => {
         val filteredItems = gastos.filter(elem => filters.head(elem) == item)
         val innerItems = join(filteredItems, filters.tail, limit)
 
-        List(item, List(filteredItems.soma, innerItems))
-      }).sortWith((a, b) => num(a) > num(b)).splitAt(limit)
+        Child(item, filteredItems.soma, innerItems)
+      }).sortWith((a, b) => a.value > b.value).splitAt(limit)
 
       if (outros.isEmpty)
         maiores
       else
-        maiores ++ List(List("Outros", outros.foldLeft(0.0)((a, b) => a + num(b))))
+        maiores ++ List(Child("Outros", outros.foldLeft(0.0)((a, b) => a + b.value), List()))
 
     } else {
       List()
@@ -67,3 +71,4 @@ class Orcamento {
     buffer.toList
   }
 }
+
