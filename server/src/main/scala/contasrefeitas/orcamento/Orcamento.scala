@@ -6,11 +6,25 @@ import scala.xml.Elem
 import scala.xml.NodeSeq
 import scala.collection.mutable.ListBuffer
 import scala.reflect.BeanInfo
+import java.util.Currency
+import java.text.NumberFormat
+import java.util.Locale
 
 case class Gasto(subfuncao : String, natureza : String, destino : String, valor : Double)
 
 @BeanInfo
-case class Child(label : String, value : Double, childs : List[Child])
+case class Child(label : String, value : Double, formattedValue : String, childs : List[Child])
+
+object Child {
+
+  implicit def addAsBrl(value : Double) = new {
+    def asBrl = NumberFormat.getCurrencyInstance(new Locale("pt", "BR")).format(value)
+  }
+
+  def apply(label : String, value : Double, childs : List[Child]) : Child = {
+    Child(label, value, value.asBrl, childs)
+  }
+}
 
 @Component
 @ApplicationScoped
