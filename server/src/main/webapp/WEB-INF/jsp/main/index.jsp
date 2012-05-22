@@ -2,7 +2,6 @@
 <head>
 	<title>Contas Refeitas</title>
 	<script src="http://d3js.org/d3.v2.js"></script>
-	<script src="/javascript/fake-data.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script src="/bootstrap/js/bootstrap.js"></script>
 	<script src="/bootstrap/js/bootstrap-modal.js"></script>
@@ -80,12 +79,18 @@
 	</script>
 <script>
 	$(document).ready(function() {
-		makeTheMagicHappen();
+		$.ajax({
+			url: "/filtros/destino/natureza",
+			method: "GET",
+			success: function(json) {
+				makeTheMagicHappen(json);
+			}
+		});
 	});
 	
-	function makeTheMagicHappen() {
+	function makeTheMagicHappen(json) {
 		
-		var data = createAlluvialData();
+		var data = createAlluvialData(json);
 
 		var nodeMap = createNodeMap(data);
 

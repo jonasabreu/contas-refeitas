@@ -1,4 +1,4 @@
-var createAlluvialData = (function() {
+var createAlluvialData = (function(json) {
   var times = [];
   var allLinks = [];
   var counter = 0;
@@ -15,16 +15,12 @@ var createAlluvialData = (function() {
 	  return nodes;
   },
 	addFirstIteration = function() {
-		var keys = [];
-		for (var key in json)
-			keys.push(key);
-    var nodes = d3.range(0, keys.length).map(function(n) {
-		var key = keys[n];
-		var value = json[key];
+    var nodes = d3.range(0, json.length - 1).map(function(n) {
+		var list = json[n][1];
        return {
          id: counter++,
          nodeName: "Node " + n,
-         nodeValue: value,
+         nodeValue: list[0],
          incoming: []
        };
    	});
@@ -37,7 +33,7 @@ var createAlluvialData = (function() {
 		// make links
 		current.forEach(function(n) {
 		  var links = {};
-		  for (var x = 0; x < nextt.length - 1; x++) {
+		  for (var x = 0; x < nextt.length; x++) {
 				var target = nextt[x];
 	      var link = {
 	          source: n.id,
