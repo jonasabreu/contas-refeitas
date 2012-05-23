@@ -1,12 +1,11 @@
-package contasrefeitas.orcamento;
+package contasrefeitas
 
-import br.com.caelum.vraptor.ioc.{ Component, ApplicationScoped }
-import br.com.caelum.vraptor.{ Resource, Get }
-import scala.xml.Text
-import scala.xml.Text
-import br.com.caelum.vraptor.Result
-import br.com.caelum.vraptor.view.Results
+import br.com.caelum.vraptor.ioc.ApplicationScoped
+import br.com.caelum.vraptor.ioc.Component
+import br.com.caelum.vraptor.Get
 import br.com.caelum.vraptor.Path
+import br.com.caelum.vraptor.Resource
+import br.com.caelum.vraptor.Result
 
 @Resource
 class Main(orcamento : Orcamento, result : Result) {

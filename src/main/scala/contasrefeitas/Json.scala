@@ -1,10 +1,11 @@
-package contasrefeitas.orcamento
+package contasrefeitas
 
-import br.com.caelum.vraptor.view.Results.nothing
-import br.com.caelum.vraptor.{ View, Result }
-import javax.servlet.http.{ HttpServletResponse, HttpServletRequest }
-import sjson.json.Serializer.{ SJSON => serializer }
 import br.com.caelum.vraptor.ioc.Component
+import br.com.caelum.vraptor.view.Results.nothing
+import br.com.caelum.vraptor.Result
+import br.com.caelum.vraptor.View
+import javax.servlet.http.HttpServletResponse
+import sjson.json.Serializer.{ SJSON => serializer }
 
 @Component
 class Json(res : HttpServletResponse, result : Result) extends View {

@@ -1,14 +1,15 @@
-package contasrefeitas.orcamento;
+package contasrefeitas
 
-import br.com.caelum.vraptor.ioc.{ Component, ApplicationScoped }
-import scala.xml.XML
-import scala.xml.Elem
-import scala.xml.NodeSeq
-import scala.collection.mutable.ListBuffer
-import scala.reflect.BeanInfo
-import java.util.Currency
+import br.com.caelum.vraptor.ioc.ApplicationScoped
+import br.com.caelum.vraptor.ioc.Component
 import java.text.NumberFormat
 import java.util.Locale
+import scala.Option.option2Iterable
+import scala.collection.mutable.ListBuffer
+import scala.reflect.BeanInfo
+import scala.xml.NodeSeq.seqToNodeSeq
+import scala.xml.NodeSeq
+import scala.xml.XML
 
 case class Gasto(subfuncao : String, natureza : String, destino : String, valor : Double)
 
