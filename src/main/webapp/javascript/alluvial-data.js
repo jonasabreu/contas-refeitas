@@ -18,7 +18,7 @@ var createAlluvialData = (function(json) {
   },
 	addFirstIteration = function() {
 		var childs = json.childs;
-	  var until = childs.length == 1 ? 1 : childs.length - 1;
+	  var until = childs.length == 1 ? 1 : childs.length;
     var nodes = d3.range(0,  until).map(function(n) {
 			console.log(n + ") value: " + childs[n].value);
       return {

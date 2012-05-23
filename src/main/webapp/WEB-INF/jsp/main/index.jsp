@@ -12,11 +12,6 @@
 </head>
 
 <style type="text/css">
-	body {
-	  margin:0px;
-		font-family: Verdana;
-	}
-    
 	.node {
 	  stroke: #fff;
 	  stroke-width: 2px;
@@ -36,27 +31,12 @@
 	    stroke: none;
 	}
 	
-	header {
-		background-color: #caeefc;
-		padding: 50px 50px;
-		height: 200px;
-		width: 900px;
-		margin: 0px auto;
-		border-radius: 25px;
+	body {
+	  margin:0px;
+		font-family: Verdana;
 	}
-	header h2 {
-		font-size: 40px;
-		font-weight: normal;
-		display: block;
-		float: right;
-		line-height: 42px;
-		width: 70%;
-	}
-	header h1 {
-		display: block;
-		float: left;
-		width: 20%;
-	}
+	
+	h2 { font-weight: normal; }
 	
 	article {
 		background-color: #EFEFEF;
@@ -71,14 +51,15 @@
 <body>
 	<header>
 		<h1>Contas Refeitas</h1>
-		<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.<h2>
+		<h2>Apresenta&#231;&#227;o dos dados financeiros da c&#226;mara municipal para o 
+		p&#250;blico interessado atrav&#233;s de navega&#231;&#227;o entre as divis&#245;es de gastos afim de expor dados de forma siplificada com textos e gr&#225;ficos.<h2>
 	</header>
 	<article>
 <script>
 	var hystory = [];
 	$(document).ready(function() {
 		$.ajax({
-			url: "/filtros/natureza/destino/subfuncao", //?limit=20
+			url: "/filtros/destino/subfuncao", //?limit=20
 			method: "GET",
 			success: function(data) {
 				json = data;
