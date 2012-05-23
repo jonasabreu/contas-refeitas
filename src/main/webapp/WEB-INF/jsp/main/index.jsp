@@ -85,7 +85,7 @@
 			}
 		});
 	});
-	var json, data;
+	var json, data, total;
 	$("rect").live('click', function() {
 		$("article svg").remove();
 		var index = parseInt($("title", $(this)).text());

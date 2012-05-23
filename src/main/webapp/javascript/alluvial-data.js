@@ -3,35 +3,37 @@ var createAlluvialData = (function(json) {
   var allLinks = [];
   var counter = 0;
 	addRoot = function() {
-		console.log("total: " + total);
+		console.log("total: " + json.value);
 	  var nodes = d3.range(0, 1).map(function(n) {
 	    return {
 	        id: counter++,
-	        nodeName: "Node " + n,
-	        nodeValue: total,
-	        incoming: []
+	        nodeName: json.label,
+	        nodeValue: json.value,
+	        incoming: [],
+					formattedValue: json.formattedValue
 	    }
 	  });
 	  times.push(nodes);
 	  return nodes;
   },
 	addFirstIteration = function() {
-	  var until = json.length == 1 ? 1 : json.length - 1;
+		var childs = json.childs;
+	  var until = childs.length == 1 ? 1 : childs.length - 1;
     var nodes = d3.range(0,  until).map(function(n) {
-			var list = json[n][1];
-			console.log(n + ") value: " + list[0]);
+			console.log(n + ") value: " + childs[n].value);
       return {
         id: counter++,
-        nodeName: n,
-        nodeValue: list[0],
-        incoming: []
+        nodeName: childs[n].label,
+        nodeValue: childs[n].value,
+        incoming: [],
+				formattedValue: json.formattedValue
       };
    	});
-		console.log("json.length: " + json.length);
+		console.log("childs.length: " + childs.length);
 		console.log("until: " + until);
-		console.log("2: " + nodes.length);
+		console.log("nodes: " + nodes.length);
 	  times.push(nodes);
-	  console.log("3: " + times[times.length-1].length);
+	  console.log("times: " + times[times.length-1].length);
 	  return nodes;
 	},
 	addNext = function() {

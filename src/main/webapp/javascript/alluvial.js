@@ -31,26 +31,8 @@ function update(first, data, t, vis, x, y, delay, padding, nodeMap, line) {
               return (y(n.offsetValue) + (i * padding) + 13 );
           })
 					.attr('x', x.rangeBand() / 4)
-					.text(function(n) { 
-						var value = n.nodeValue.toFixed(2);
-						var array = value.toString().split('.');
-						var inteiro = array[0];
-						var inteiro_legivel = "";
-						var c = 1;
-						for (var i=inteiro.length; i>0; i--) {
-						  inteiro_legivel += inteiro[i-1];
-						  if ( (c) % 3 == 0 && i > 1) {
-						    inteiro_legivel += "."
-						  }
-						  c++;
-						}
-						var s = "";
-						var i = inteiro_legivel.length;
-						while (i>0) {
-						  s += inteiro_legivel.substring(i-1,i);
-						  i--;
-						}
-						return "R$" + s + "," + array[1];
+					.text(function(n) {
+						return n.formattedValue;
 					});
     }, (first ? 0 : delay));
 
