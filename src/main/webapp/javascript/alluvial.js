@@ -23,6 +23,7 @@ function update(first, data, t, vis, x, y, delay, padding, nodeMap, line) {
             })
             .attr('width', x.rangeBand())
             .attr('height', function(n) { return y(n.nodeValue) })
+						.attr('data-id', function(n) { return n.id })
           .append('svg:title')
             .text(function(n) { return n.nodeName });
 				nodes.append('svg:text')

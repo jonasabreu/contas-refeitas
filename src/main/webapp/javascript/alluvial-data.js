@@ -26,7 +26,7 @@ var createAlluvialData = (function(json) {
         nodeName: childs[n].label,
         nodeValue: childs[n].value,
         incoming: [],
-				formattedValue: json.formattedValue
+				formattedValue: childs[n].formattedValue
       };
    	});
 		console.log("childs.length: " + childs.length);

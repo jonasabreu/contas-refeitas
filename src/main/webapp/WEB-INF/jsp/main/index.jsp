@@ -75,9 +75,10 @@
 	</header>
 	<article>
 <script>
+	var hystory = [];
 	$(document).ready(function() {
 		$.ajax({
-			url: "/filtros/destino/natureza", //?limit=20
+			url: "/filtros/natureza/destino/subfuncao", //?limit=20
 			method: "GET",
 			success: function(data) {
 				json = data;
@@ -88,9 +89,12 @@
 	var json, data, total;
 	$("rect").live('click', function() {
 		$("article svg").remove();
-		var index = parseInt($("title", $(this)).text());
-		total = json[index][1][0];
-		makeTheMagicHappen(json[index][1][1]);
+		var index = parseInt($(this).data("id"));
+		hystory.push(index);
+		var child = json;
+		for (var i = 0; i < hystory.length; i++) 
+			child = child.childs[hystory[i] -1];
+		makeTheMagicHappen(child);
 	});
 	
 	function makeTheMagicHappen(json) {
