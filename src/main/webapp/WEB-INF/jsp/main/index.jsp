@@ -32,34 +32,48 @@
 	}
 	
 	body {
-	  margin:0px;
+		width: 1000px;
+	  margin: 20px auto;
 		font-family: Verdana;
 	}
 	
-	h2 { font-weight: normal; }
+	header h2 { font-weight: normal; 
+		float:right; 
+		display:block; 
+		width: 600px; 
+		margin: 50px;
+	}
+	header h1 { 
+		background-image: url('/images/logo.png');
+		height: 293px; 
+		width: 291px;
+		text-indent: -999999px;
+		float:left;
+		display:block;
+	 }
 	
+	header img#logo {
+		height: 293px; 
+		width: 291px;
+	}
 	article {
-		background-color: #EFEFEF;
-   	border-radius: 25px 25px 25px 25px;
-	  height: 500px;
-	  margin: 0 auto;
-	  padding: 50px;
-    width: 1200px;
+		
 	}
 </style>
 
 <body>
 	<header>
-		<h1>Contas Refeitas</h1>
-		<h2>Apresenta&#231;&#227;o dos dados financeiros da c&#226;mara municipal para o 
-		p&#250;blico interessado atrav&#233;s de navega&#231;&#227;o entre as divis&#245;es de gastos afim de expor dados de forma siplificada com textos e gr&#225;ficos.<h2>
+		<img id="logo" scr="/images/logo_big.png" alt="Contas Refeitas" />
+		<h1><h1>
 	</header>
 	<article>
+		<p>Apresenta&#231;&#227;o dos dados financeiros da c&#226;mara municipal para o 
+		p&#250;blico interessado atrav&#233;s de navega&#231;&#227;o entre as divis&#245;es de gastos afim de expor dados de forma siplificada com textos e gr&#225;ficos.</p>
 <script>
 	var hystory = [];
 	$(document).ready(function() {
 		$.ajax({
-			url: "/filtros/destino/subfuncao", //?limit=20
+			url: "/filtros/natureza/destino", //?limit=20
 			method: "GET",
 			success: function(data) {
 				json = data;
@@ -116,7 +130,7 @@
 		var vis = d3.select("article")
 		  .append("svg:svg")
 		    .attr("width", w)
-		    .attr("height", h);
+		    .attr("height", h + 200);
 
 		var t = 0;
 
