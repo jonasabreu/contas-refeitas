@@ -12,11 +12,25 @@ Este site começou a ser feito durante o Hackaton da Câmara Municipal de São P
 
   Estamos trabalhando no projeto e em breve teremos todos os procedimentos descritos.
 
-== TODO
+== TODO 
 
-* Criar um server que irá implementar a api.spec
-* Criar a primeira visualização utilizando o D3
-* Criar dados fake para que back-end e front-end possam andar independentemente (DONE)
+	A lista de TODO está disponível em http://whattodo.herokuapp.com/contas-refeitas
+
+* Colocar os números dentro das caixas no gráfico (DONE!)
+* Criar uma tip para informação detalhada e opções de detalhamento 
+* Criar um Layout para Site
+* Criar a tela para dar join na causa
+* Criar um controle para o número de subdivisões possíveis
+* Criar um slicer das subdivisões
+* Deploy do site
+* Integrar Software e site (DONE!)
+* Criar um logo (DONE!)
+* Criar um server que irá implementar a api.spec (DONE!)
+* Criar a primeira visualização utilizando o D3 (DONE!)
+* Criar dados fake para que back-end e front-end possam andar independentemente (DONE!)
+
+
+
 
 == Referências
 
