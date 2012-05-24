@@ -10,16 +10,107 @@
 	<script src="/javascript/alluvial-settings.js"></script>
 	<script src="/javascript/alluvial.js"></script>
 	<script src="/javascript/events.js"></script>
+	<script src="/qtip/js/jquery.qtip.min.js"></script>
 	<link type="text/css" rel="stylesheet" media="screen" href="/bootstrap/css/bootstrap.css">
 	<link type="text/css" rel="stylesheet" media="screen" href="/stylesheets/style.css">
+  <link type="text/css" rel="stylesheet" media="screen" href="/qtip/css/jquery.qtip.min.css">
 </head>
 <body>
-	
 	<header>
 		<img id="logo" src="/images/logo_big.png" alt="Contas Refeitas" />
 		<h1>Contas Refeitas</h1>
 		<a href="https://github.com/jonasabreu/contas-refeitas"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 	</header>
+	<article>
+<script>
+
+	var hystory = [];
+	$(document).ready(function() {
+		$.ajax({
+			url: "/filtros/destino/subfuncao", //?limit=20
+			method: "GET",
+			success: function(data) {
+				json = data;
+				makeTheMagicHappen(data);
+			}
+		});
+	});
+	var json, data, total;
+	$("rect[data-description]").live('click', function(element) {
+    $(element.target).qtip({
+      content: $(this).data("description"),
+      position: 'topMiddle',
+      hide: {
+        fixed: true
+      },
+      style: {
+        tip: true,
+        height: 100,
+        width: 277
+      }
+    });
+  });
+/*		$("article svg").remove();
+		var index = parseInt($(this).data("id"));
+		hystory.push(index);
+		var child = json;
+		for (var i = 0; i < hystory.length; i++) 
+			child = child.childs[hystory[i] -1];
+		makeTheMagicHappen(child); 
+	}); */
+	
+	function makeTheMagicHappen(json) {
+		data = createAlluvialData(json);
+
+		var nodeMap = createNodeMap(data);
+
+		attachLinksToNodes(data, nodeMap);
+
+		data = sortByValueAndCalculateOffsets(data);
+
+		// calculate maxes
+		var maxn = d3.max(data, function(t) { return t.length });
+		var maxv = d3.max(data, function(t) { 
+			return d3.sum(t, function(n) { 
+				return n.nodeValue;
+			});
+		});
+
+		/* Make Vis */
+
+		// settings and scales
+		var w = 1250,
+		    h = 500,
+		    gapratio = .7,
+		    delay = 1500,
+		    padding = 15,
+		    x = d3.scale.ordinal()
+		        .domain(d3.range(data.length))
+		        .rangeBands([0, w + (w/(data.length-1))], gapratio),
+		    y = d3.scale.linear()
+		        .domain([0, maxv])
+		        .range([0, h - padding * maxn]),
+		    line = d3.svg.line()
+		        .interpolate('basis');
+
+		// root
+		var vis = d3.select("article")
+		  .append("svg:svg")
+		    .attr("width", w)
+		    .attr("height", h);
+
+		var t = 0;
+
+		t = update(true, data, t, vis, x, y, delay, padding, nodeMap, line);
+		updateNext(t, data, vis, x, y, delay, padding, nodeMap, line);
+		
+	}
+
+	/*$('#myModal').click(function() {
+		$('#myModal').modal({
+		  keyboard: false
+		});	
+	});*/
 	
 	<section>
 		<article>
