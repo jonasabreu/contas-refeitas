@@ -59,11 +59,6 @@
 			<div id="svg"></div>
 		</article>
 	</section>
-	<section>
-		<article>
-			<h1>Join the Cause!</h1>
-		</article>
-	</section>
 	<footer>
 		Todo o conte&#250;do deste site foi desenvolvido durante o Hackaton 2012 na C&#226;mara Municipal de S&#227;o Paulo por Jonas de Abreu, Juliano Alves e Raphael Molesim.
 	</footer>
