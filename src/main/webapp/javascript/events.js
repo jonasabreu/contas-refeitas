@@ -1,6 +1,6 @@
 var json;
 var hystory = [];
-$("rect").live('click', function() {
+/*$("rect").live('click', function() {
   $("article svg").remove();
   var index = parseInt($(this).data("id"));
   hystory.push(index);
@@ -8,7 +8,21 @@ $("rect").live('click', function() {
   for (var i = 0; i < hystory.length; i++) 
   child = child.childs[hystory[i] -1];
 drawAlluvial(child);
-});
+});*/
+
+var bindEvents = function() {
+	qtipShow();
+};
+
+var qtipShow = function() {
+	$("rect").qtip({
+		content: { text: function() { return $(this).data("description"); } },
+		position: { at: 'bottom center', my: 'top center' },
+    show: { event: 'click' },
+		hide: { event: 'click' },
+    style: { classes: 'ui-tooltip-light ui-tooltip-shadow' }
+  });
+};
 
 $(document).ready(function() {
   $.ajax({
@@ -20,20 +34,6 @@ $(document).ready(function() {
     }
   });
 
-  $("rect[data-description]").live('mouseover', function(element) {
-    $(element.target).qtip({
-      content: "OBAAAAAAAAAAAA"
-//      content: $(this).data("description")
-/*      position: 'topMiddle',
-      hide: {
-        fixed: true
-      },
-      style: {
-        tip: true,
-        height: 100,
-        width: 277
-      }*/
-    });
-  });
+	setTimeout(bindEvents, 3000);
 });
 

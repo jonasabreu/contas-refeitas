@@ -9,8 +9,9 @@
 	<script src="/javascript/alluvial-links.js"></script>
 	<script src="/javascript/alluvial-settings.js"></script>
 	<script src="/javascript/alluvial.js"></script>
-	<script src="/javascript/events.js"></script>
 	<script src="/javascript/jquery.qtip.min.js"></script>
+	<script src="/javascript/events.js"></script>
+	
 	<link type="text/css" rel="stylesheet" media="screen" href="/bootstrap/css/bootstrap.css">
 	<link type="text/css" rel="stylesheet" media="screen" href="/stylesheets/style.css">
 	<link type="text/css" rel="stylesheet" media="screen" href="/stylesheets/jquery.qtip.min.css">

@@ -115,11 +115,12 @@ function update(first, data, t, vis, x, y, delay, padding, nodeMap, line) {
       .transition()
         .duration(delay)
         .attr('d', linkLine());
+		
 		return t;
 }
 
 function updateNext(t, data, vis, x, y, delay, padding, nodeMap, line) {
-    if (t < data.length) {
+		if (t < data.length) {
         update(undefined, data, t, vis, x, y, delay, padding, nodeMap, line);
         window.setTimeout(function() {
 					updateNext(t, data, vis, x, y, delay, padding, nodeMap, line);
