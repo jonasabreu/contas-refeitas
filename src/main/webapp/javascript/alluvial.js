@@ -41,7 +41,9 @@ function update(first, data, t, vis, x, y, delay, padding, nodeMap, line) {
 							return height;
 						})
 						.attr('data-id', function(n) { return n.id })
-						.attr('data-description', function(n) { return n.nodeName })
+            .attr('data-description', function(n) { return n.nodeName })
+          .append('svg:title')
+            .text(function(n) { return n.nodeName });
 				nodes.append('svg:text')
 					.attr('fill', '#FFFFFF')
           .attr('y', function(n, i) {
