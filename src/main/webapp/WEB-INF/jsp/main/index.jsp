@@ -12,7 +12,8 @@
 	<script src="/javascript/jquery.qtip.min.js"></script>
 	<script src="https://raw.github.com/BorisMoore/jsrender/master/jsrender.js"></script>
 	<script src="/javascript/events.js"></script>
-	
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 	<link type="text/css" rel="stylesheet" media="screen" href="/bootstrap/css/bootstrap.css">
 	<link type="text/css" rel="stylesheet" media="screen" href="/stylesheets/style.css">
 	<link type="text/css" rel="stylesheet" media="screen" href="/stylesheets/jquery.qtip.min.css">
@@ -45,23 +46,18 @@
 			</ul>
 		</article>
 		<article>
-			Items:
-			<ul class="nav nav-pills">
-				<li class="active"><a href="#">10</a></li>
-				<li><a href="#">20</a></li>
-				<li><a href="#">30</a></li>
+			<ul id="items" class="nav nav-pills">
+				<li><a href="#">Items:</a></li>			
+				<li class="active item"><a href="#">10</a></li>
+				<li class="item"><a href="#">15</a></li>
+				<li class="item"><a href="#">20</a></li>
 			</ul>
-			
+			Come&ccedil;ando em <div id="slider"></div>
 		</article>
 	</section>
 	<section>
 		<article>
 			<div id="svg"></div>
-		</article>
-	</section>
-	<section>
-		<article>
-			<h1>Join the Cause!</h1>
 		</article>
 	</section>
 	<footer>

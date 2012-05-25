@@ -1,4 +1,7 @@
 function drawAlluvial(json) {
+
+	$("#slider").slider( "option", "max", json.maxChilds);
+	
 	var data = createAlluvialData(json);
 
 	var nodeMap = createNodeMap(data);

@@ -1,18 +1,23 @@
 var json;
 var hystory = [];
-$("li.buttons button").live('click', function() {
-  $("article svg").remove();
-  var url = $(this).data("url");
-	requestData(url, 10, 0);
-  hystory.push(index);
-  var child = json;
-  for (var i = 0; i < hystory.length; i++) 
-  	child = child.childs[hystory[i] -1];
-	drawAlluvial(child);
-});
+var limit = 10;
+var startAt = 0;
+
+var buttonClick = function() { 
+	$("ul.buttons button").live('click', function() {
+  	$("article svg").remove();
+	  var index = parseInt($(this).data("id"));
+	  hystory.push(index);
+	  var child = json;
+	  for (var i = 0; i < hystory.length; i++) 
+	  	child = child.childs[hystory[i] -1];
+		drawAlluvial(child);
+	});
+};
 
 var bindEvents = function() {
 	qtipShow();
+	buttonClick();
 };
 
 var registerTemplates = function() {
@@ -21,9 +26,9 @@ var registerTemplates = function() {
 	});
 };
 
-var requestData = function(filtros, limit, start_at) {
+function loadAlluvial(url) {
 	$.ajax({
-	url: filtros + "?limit=" + limit + "&startAt=" + start_at,  
+	url: "/filtros/" + url + "?limit=" + limit + "&startAt=" + startAt,  
     method: "GET",
     success: function(data) {
       json = data;
@@ -59,7 +64,25 @@ var qtipShow = function() {
 };
 
 $(document).ready(function() {
-	
-	setTimeout(bindEvents, 3000);
+	loadAlluvial(); 
+	setTimeout(bindEvents, 5000);
 	registerTemplates();
+  
+  $('li.item a').click(function(){
+	  $('li.item').removeClass('active');
+	  $(this).parent().addClass('active');
+	  limit = $(this).text();
+	  $("article svg").remove();
+	  loadAlluvial();
+  });
+  
+  $('#slider').slider({
+  		min: 0,
+  		change: function(event, ui) {
+  			startAt = $('#slider').slider('value');
+  			$("article svg").remove();
+  			loadAlluvial();
+  		}
+  });
+
 });

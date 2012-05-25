@@ -15,7 +15,7 @@ import java.text.DecimalFormat
 case class Gasto(subfuncao : String, natureza : String, destino : String, valor : Double)
 
 @BeanInfo
-case class Child(label : String, value : Double, formattedValue : String, childs : List[Child], rootPercent : String, percent : String)
+case class Child(label : String, value : Double, formattedValue : String, childs : List[Child], rootPercent : String, percent : String, maxChilds : Int)
 
 object Child {
 
@@ -24,8 +24,8 @@ object Child {
     def percentOf(reference : Double) = "%1.2f".format(value * 100 / reference) + "%"
   }
 
-  def apply(label : String, value : Double, childs : List[Child], root : Double, total : Double) : Child = {
-    Child(label, value, value.asBrl, childs, value.percentOf(root), value.percentOf(total))
+  def apply(label : String, value : Double, childs : List[Child], root : Double, total : Double, maxChilds : Int) : Child = {
+    Child(label, value, value.asBrl, childs, value.percentOf(root), value.percentOf(total), maxChilds)
   }
 }
 
@@ -46,20 +46,22 @@ class Orcamento {
   val total = gastos.soma
 
   def join(list : List[(Gasto) => String], limit : Int, startAt : Int) : Child = {
-    Child("root", total, join(gastos, list, limit.orDefault(10), startAt.orDefault(0), total, total), total, total)
+    val (innerChilds, maxChilds) = join(gastos, list, limit.orDefault(10), startAt.orDefault(0), total, total)
+    Child("root", total, innerChilds, total, total, maxChilds)
   }
 
-  private def join(gastos : List[Gasto], filters : List[(Gasto) => String], limit : Int, startAt : Int, root : Double, total : Double) : List[Child] = {
+  private def join(gastos : List[Gasto], filters : List[(Gasto) => String], limit : Int, startAt : Int, root : Double, total : Double) : (List[Child], Int) = {
     if (!filters.isEmpty) {
       val items = gastos.map(filters.head).distinct
-      items.map(item => {
+      val aux = items.map(item => {
         val filteredItems = gastos.filter(elem => filters.head(elem) == item)
         val soma = filteredItems.soma
-        val innerItems = join(filteredItems, filters.tail, limit, startAt, soma, total)
-        Child(item, soma, innerItems, root, total)
-      }).sortWith((a, b) => a.value > b.value).slice(startAt, startAt + limit)
+        val (innerItems, maxChilds) = join(filteredItems, filters.tail, limit, startAt, soma, total)
+        Child(item, soma, innerItems, root, total, maxChilds)
+      }).sortWith((a, b) => a.value > b.value)
+      (aux.slice(startAt, startAt + limit), aux.length)
     } else {
-      List()
+      (List(), 0)
     }
   }
 
