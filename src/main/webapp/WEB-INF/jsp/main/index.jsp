@@ -42,6 +42,14 @@
 				p&#250;blico interessado atrav&#233;s de navega&#231;&#227;o entre as divis&#245;es de gastos afim de expor dados de forma siplificada com textos e gr&#225;ficos.</p>
 				</li>
 			</ul>
+		</article>
+		<article>
+			Items:
+			<ul class="nav nav-pills">
+				<li class="active"><a href="#">10</a></li>
+				<li><a href="#">20</a></li>
+				<li><a href="#">30</a></li>
+			</ul>
 			
 		</article>
 	</section>

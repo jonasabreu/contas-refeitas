@@ -21,7 +21,7 @@ object Child {
 
   implicit def addAsBrl(value : Double) = new {
     def asBrl = NumberFormat.getCurrencyInstance(new Locale("pt", "BR")).format(value)
-    def percentOf(reference : Double) = "%2.2f".format(value * 100 / reference) + "%"
+    def percentOf(reference : Double) = "%1.2f".format(value * 100 / reference) + "%"
   }
 
   def apply(label : String, value : Double, childs : List[Child], root : Double, total : Double) : Child = {
@@ -33,33 +33,31 @@ object Child {
 @ApplicationScoped
 class Orcamento {
 
-  private val default = 10
-
   val gastos = parse(XML.load(classOf[Orcamento].getResourceAsStream("/cmsp/gastos-2011.xml")) \\ "ficha")
 
   implicit def addSoma(list : List[Gasto]) = new {
     def soma = list.foldLeft(0.0)(_ + _.valor)
   }
 
-  lazy val total = gastos.soma
+  implicit def addOrDefault(value : Int) = new {
+    def orDefault(default : Int) = if (value == 0) default else value
+  }
 
-  def join(list : List[(Gasto) => String], limit : Int) : Child = Child("root", total, join(gastos, list, if (limit == 0) default else limit, total, total), total, total)
+  val total = gastos.soma
 
-  private def join(gastos : List[Gasto], filters : List[(Gasto) => String], limit : Int, root : Double, total : Double) : List[Child] = {
+  def join(list : List[(Gasto) => String], limit : Int, startAt : Int) : Child = {
+    Child("root", total, join(gastos, list, limit.orDefault(10), startAt.orDefault(0), total, total), total, total)
+  }
+
+  private def join(gastos : List[Gasto], filters : List[(Gasto) => String], limit : Int, startAt : Int, root : Double, total : Double) : List[Child] = {
     if (!filters.isEmpty) {
       val items = gastos.map(filters.head).distinct
-      val (maiores, outros) = items.map(item => {
+      items.map(item => {
         val filteredItems = gastos.filter(elem => filters.head(elem) == item)
         val soma = filteredItems.soma
-        val innerItems = join(filteredItems, filters.tail, limit, soma, total)
+        val innerItems = join(filteredItems, filters.tail, limit, startAt, soma, total)
         Child(item, soma, innerItems, root, total)
-      }).sortWith((a, b) => a.value > b.value).splitAt(limit)
-
-      if (outros.isEmpty)
-        maiores
-      else
-        maiores ++ List(Child("Outros", outros.foldLeft(0.0)((a, b) => a + b.value), List(), root, total))
-
+      }).sortWith((a, b) => a.value > b.value).slice(startAt, startAt + limit)
     } else {
       List()
     }
