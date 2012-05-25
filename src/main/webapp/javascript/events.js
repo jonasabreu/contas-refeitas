@@ -12,7 +12,7 @@ drawAlluvial(child);
 
 $(document).ready(function() {
   $.ajax({
-	url: "/filtros/destino/natureza?limit=10&startAt=10",  
+	url: "/filtros/destino/natureza?limit=10&startAt=0",  
     method: "GET",
     success: function(data) {
       json = data;
