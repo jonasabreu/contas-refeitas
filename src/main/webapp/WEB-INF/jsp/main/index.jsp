@@ -10,6 +10,7 @@
 	<script src="/javascript/alluvial-settings.js"></script>
 	<script src="/javascript/alluvial.js"></script>
 	<script src="/javascript/jquery.qtip.min.js"></script>
+	<script src="https://raw.github.com/BorisMoore/jsrender/master/jsrender.js"></script>
 	<script src="/javascript/events.js"></script>
 	
 	<link type="text/css" rel="stylesheet" media="screen" href="/bootstrap/css/bootstrap.css">
@@ -66,7 +67,20 @@
 	<footer>
 		Todo o conte&#250;do deste site foi desenvolvido durante o Hackaton 2012 na C&#226;mara Municipal de S&#227;o Paulo por Jonas de Abreu, Juliano Alves e Raphael Molesim.
 	</footer>
-
+	<div id="tipTemplate" class="hidden">
+		<div class='info-tip'>
+			<h3>{{:name}}</h3>
+			<ul>
+				<li><label>% do Total:</label>{{:percentage_total}}</li>
+				<li><label>% da Agrega&ccedil;&atilde;o:</label>{{:percentage_parent}}</li>
+			</ul>
+			<ul class="buttons">
+			{{for buttons}}
+				<li><button data-url='{{:url}}' class='btn btn-{{:color}}'>{{:name}}</button></li>
+			{{/for}}
+			<ul>
+		</div>
+	</div>
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-32103647-1']);

@@ -53,8 +53,31 @@ header img#logo {
 }
 article { padding: 20px; }
 body:last-child { margin-bottom: 60px; }
+h3 { font-size: 14px; }
 
+.hidden { display: none; }
 
+div.info-tip ul { 
+	display: block;
+  list-style: none outside none;
+  margin: auto;
+  width: 275px;
+}
+div.info-tip ul li {
+	font-size: 14px;
+	padding: 5px;
+}
+div.info-tip ul li label {
+	display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  width: 192px;
+}
+div.info-tip ul.buttons { }
+div.info-tip ul.buttons li {
+	float: left;
+}
+div.info-tip ul li button { }
 footer {
 	clear: both;
   width: 100%;

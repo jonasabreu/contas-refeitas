@@ -42,8 +42,8 @@ function update(first, data, t, vis, x, y, delay, padding, nodeMap, line) {
 						})
 						.attr('data-id', function(n) { return n.id })
             .attr('data-description', function(n) { return n.nodeName })
-          .append('svg:title')
-            .text(function(n) { return n.nodeName });
+       			.attr('data-pp', function(n) { return n.parentPercent })
+						.attr('data-tp', function(n) { return n.totalPercent })
 				nodes.append('svg:text')
 					.attr('fill', '#FFFFFF')
           .attr('y', function(n, i) {
