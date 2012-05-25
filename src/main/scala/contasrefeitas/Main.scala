@@ -14,6 +14,11 @@ class Main(orcamento : Orcamento, result : Result) {
   def index() = {
   }
 
+  @Get(Array("/filtros"))
+  def semFiltro(limit : Int, startAt : Int) = {
+    render(List(), limit, startAt)
+  }
+
   @Get(Array("/filtros/{filtro}"))
   def filtroSimples(filtro : String, limit : Int, startAt : Int) = {
     render(List(filterFor(filtro)), limit, startAt)
