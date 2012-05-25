@@ -10,20 +10,22 @@ import scala.reflect.BeanInfo
 import scala.xml.NodeSeq.seqToNodeSeq
 import scala.xml.NodeSeq
 import scala.xml.XML
+import java.text.DecimalFormat
 
 case class Gasto(subfuncao : String, natureza : String, destino : String, valor : Double)
 
 @BeanInfo
-case class Child(label : String, value : Double, formattedValue : String, childs : List[Child])
+case class Child(label : String, value : Double, formattedValue : String, childs : List[Child], rootPercent : String, percent : String)
 
 object Child {
 
   implicit def addAsBrl(value : Double) = new {
     def asBrl = NumberFormat.getCurrencyInstance(new Locale("pt", "BR")).format(value)
+    def percentOf(reference : Double) = "%2.2f".format(value * 100 / reference) + "%"
   }
 
-  def apply(label : String, value : Double, childs : List[Child]) : Child = {
-    Child(label, value, value.asBrl, childs)
+  def apply(label : String, value : Double, childs : List[Child], root : Double, total : Double) : Child = {
+    Child(label, value, value.asBrl, childs, value.percentOf(root), value.percentOf(total))
   }
 }
 
@@ -39,22 +41,24 @@ class Orcamento {
     def soma = list.foldLeft(0.0)(_ + _.valor)
   }
 
-  def join(list : List[(Gasto) => String], limit : Int) : Child = Child("root", gastos.soma, join(gastos, list, if (limit == 0) default else limit))
+  lazy val total = gastos.soma
 
-  private def join(gastos : List[Gasto], filters : List[(Gasto) => String], limit : Int) : List[Child] = {
+  def join(list : List[(Gasto) => String], limit : Int) : Child = Child("root", total, join(gastos, list, if (limit == 0) default else limit, total, total), total, total)
+
+  private def join(gastos : List[Gasto], filters : List[(Gasto) => String], limit : Int, root : Double, total : Double) : List[Child] = {
     if (!filters.isEmpty) {
       val items = gastos.map(filters.head).distinct
       val (maiores, outros) = items.map(item => {
         val filteredItems = gastos.filter(elem => filters.head(elem) == item)
-        val innerItems = join(filteredItems, filters.tail, limit)
-
-        Child(item, filteredItems.soma, innerItems)
+        val soma = filteredItems.soma
+        val innerItems = join(filteredItems, filters.tail, limit, soma, total)
+        Child(item, soma, innerItems, root, total)
       }).sortWith((a, b) => a.value > b.value).splitAt(limit)
 
       if (outros.isEmpty)
         maiores
       else
-        maiores ++ List(Child("Outros", outros.foldLeft(0.0)((a, b) => a + b.value), List()))
+        maiores ++ List(Child("Outros", outros.foldLeft(0.0)((a, b) => a + b.value), List(), root, total))
 
     } else {
       List()
