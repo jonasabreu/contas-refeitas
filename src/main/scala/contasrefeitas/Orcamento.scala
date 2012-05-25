@@ -65,13 +65,6 @@ class Orcamento {
     }
   }
 
-  private def num(item : List[Any]) : Double = {
-    item(1) match {
-      case n : Double => n
-      case n : List[_] => n(0).asInstanceOf[Double]
-    }
-  }
-
   private def parse(nodes : NodeSeq) : List[Gasto] = {
     val buffer = ListBuffer[Gasto]()
     nodes.foreach(node => {
