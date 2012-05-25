@@ -47,7 +47,7 @@ class Orcamento {
 
   def join(list : List[(Gasto) => String], limit : Int, startAt : Int) : Child = {
     val (innerChilds, maxChilds) = join(gastos, list, limit.orDefault(10), startAt.orDefault(0), total, total)
-    Child("root", total, innerChilds, total, total, maxChilds)
+    Child("Total gasto", total, innerChilds, total, total, maxChilds)
   }
 
   private def join(gastos : List[Gasto], filters : List[(Gasto) => String], limit : Int, startAt : Int, root : Double, total : Double) : (List[Child], Int) = {
