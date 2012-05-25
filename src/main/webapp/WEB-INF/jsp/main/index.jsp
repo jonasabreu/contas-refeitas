@@ -11,6 +11,8 @@
 	<script src="/javascript/alluvial.js"></script>
 	<script src="/javascript/events.js"></script>
 	<script src="/javascript/jquery.qtip.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 	<link type="text/css" rel="stylesheet" media="screen" href="/bootstrap/css/bootstrap.css">
 	<link type="text/css" rel="stylesheet" media="screen" href="/stylesheets/style.css">
 	<link type="text/css" rel="stylesheet" media="screen" href="/stylesheets/jquery.qtip.min.css">
@@ -49,7 +51,7 @@
 				<li class="item"><a href="#">15</a></li>
 				<li class="item"><a href="#">20</a></li>
 			</ul>
-			
+			Come&ccedil;ando em <div id="slider"></div>
 		</article>
 	</section>
 	<section>

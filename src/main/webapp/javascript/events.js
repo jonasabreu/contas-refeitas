@@ -1,6 +1,7 @@
 var json;
 var hystory = [];
 var limit = 10;
+var startAt = 0;
 
 $("rect").live('click', function() {
   $("article svg").remove();
@@ -14,7 +15,7 @@ $("rect").live('click', function() {
 
 function loadAlluvial() {
 	$.ajax({
-	url: "/filtros/destino/natureza?limit=" + limit + "&startAt=0",  
+	url: "/filtros/destino/natureza?limit=" + limit + "&startAt=" + startAt,  
     method: "GET",
     success: function(data) {
       json = data;
@@ -48,5 +49,14 @@ $(document).ready(function() {
 	  limit = $(this).text();
 	  $("article svg").remove();
 	  loadAlluvial();
+  });
+  
+  $('#slider').slider({
+  		min: 0,
+  		change: function(event, ui) {
+  			startAt = $('#slider').slider('value');
+  			$("article svg").remove();
+  			loadAlluvial();
+  		}
   });
 });
