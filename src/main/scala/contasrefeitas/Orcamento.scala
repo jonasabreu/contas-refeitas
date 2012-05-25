@@ -74,7 +74,9 @@ class Orcamento {
         val destino = (node.attribute("nome")).head.text
         (node \\ "vlrPago").foreach(node => {
           val valor = node.text.replaceAll(",", ".").toDouble
-          buffer += Gasto(subfuncao, natureza, destino, valor)
+          if (valor > Double.MinPositiveValue) {
+            buffer += Gasto(subfuncao, natureza, destino, valor)
+          }
         })
       })
     })
