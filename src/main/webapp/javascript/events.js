@@ -1,5 +1,7 @@
 var json;
 var hystory = [];
+var limit = 10;
+
 $("rect").live('click', function() {
   $("article svg").remove();
   var index = parseInt($(this).data("id"));
@@ -7,18 +9,22 @@ $("rect").live('click', function() {
   var child = json;
   for (var i = 0; i < hystory.length; i++) 
   child = child.childs[hystory[i] -1];
-drawAlluvial(child);
+  drawAlluvial(child);
 });
 
-$(document).ready(function() {
-  $.ajax({
-	url: "/filtros/destino/natureza?limit=10&startAt=0",  
+function loadAlluvial() {
+	$.ajax({
+	url: "/filtros/destino/natureza?limit=" + limit + "&startAt=0",  
     method: "GET",
     success: function(data) {
       json = data;
       drawAlluvial(data);
     }
   });
+}
+
+$(document).ready(function() {
+  loadAlluvial(); 
 
   $("rect[data-description]").live('mouseover', function(element) {
     $(element.target).qtip({
@@ -34,5 +40,13 @@ $(document).ready(function() {
         width: 277
       }*/
     });
+  });
+  
+  $('li.item a').click(function(){
+	  $('li.item').removeClass('active');
+	  $(this).parent().addClass('active');
+	  limit = $(this).text();
+	  $("article svg").remove();
+	  loadAlluvial();
   });
 });

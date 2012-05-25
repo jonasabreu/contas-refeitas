@@ -43,11 +43,11 @@
 			</ul>
 		</article>
 		<article>
-			Items:
 			<ul class="nav nav-pills">
-				<li class="active"><a href="#">10</a></li>
-				<li><a href="#">20</a></li>
-				<li><a href="#">30</a></li>
+				<li><a href="#">Items:</a></li>			
+				<li class="active item"><a href="#">10</a></li>
+				<li class="item"><a href="#">20</a></li>
+				<li class="item"><a href="#">30</a></li>
 			</ul>
 			
 		</article>
