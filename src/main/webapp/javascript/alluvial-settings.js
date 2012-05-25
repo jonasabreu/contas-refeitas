@@ -20,9 +20,9 @@ function drawAlluvial(json) {
 	// settings and scales
 	var w = 1000,
 	    h = 500,
+	    padding = 15,
 	    gapratio = .7,
 	    delay = 1500,
-	    padding = 15,
 	    x = d3.scale.ordinal()
 	        .domain(d3.range(data.length))
 	        .rangeBands([0, w + (w/(data.length-1))], gapratio),
@@ -36,7 +36,7 @@ function drawAlluvial(json) {
 	var vis = d3.select("#svg")
 	  .append("svg:svg")
 	    .attr("width", w)
-	    .attr("height", h + 110);
+	    .attr("height", h + 110 + (json.childs.length - 10) * (padding + 18));
 
 	var t = 0;
 

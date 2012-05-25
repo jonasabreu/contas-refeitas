@@ -12,7 +12,7 @@ $("rect").live('click', function() {
 
 $(document).ready(function() {
 	$.ajax({
-		url: "/filtros/natureza/destino", //?limit=20
+		url: "/filtros/destino/natureza?limit=10", 
 		method: "GET",
 		success: function(data) {
 			json = data;
