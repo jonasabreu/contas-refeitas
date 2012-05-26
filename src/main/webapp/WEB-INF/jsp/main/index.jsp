@@ -52,7 +52,7 @@
 				<li class="item"><a href="#">15</a></li>
 				<li class="item"><a href="#">20</a></li>
 			</ul>
-			Come&ccedil;ando em <div id="slider"></div>
+			Come&ccedil;ando em: <div id="slider"></div>
 		</article>
 		<article>
 			<div id="svg"></div>
