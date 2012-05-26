@@ -77,7 +77,7 @@ var qtipShow = function() {
 			}
 	  };
 	
-	if ($(item).data("id") == 0)
+	if ($(item).data("id") == 0 && filters == "")
 		tipSettings.show.ready = true;
 	
 	$(item).qtip(tipSettings);

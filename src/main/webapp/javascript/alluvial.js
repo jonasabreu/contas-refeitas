@@ -55,8 +55,6 @@ function update(first, data, t, vis, x, y, delay, padding, nodeMap, line) {
           })
 					.attr('x', function(n) {
 						var size = n.formattedValue.length;
-						//if (size == 13) return x.rangeBand() / 4
-						//else 
 						return (x.rangeBand() / 2) - ((size * 7.5	) / 2)
 					})
 					.text(function(n) {
