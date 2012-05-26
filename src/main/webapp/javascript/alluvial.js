@@ -77,8 +77,6 @@ function update(first, data, t, vis, x, y, delay, padding, nodeMap, line) {
                  source.order * padding +
                  y(l.outOffset) +
                  y(l.value)/2;
-						if (target.h)
-						  console.log("spline offset => " + offsetMap[target.id]);
 
             var targety = y(target.offsetValue) + 
                  target.order * padding + 
