@@ -10,8 +10,8 @@ var createAlluvialData = (function(json) {
 	        nodeValue: json.value,
 	        incoming: [],
 					formattedValue: json.formattedValue,
-					parentPercent: childs[n].rootPercent,
-					totalPercent: childs[n].percent
+					parentPercent: json.rootPercent,
+					totalPercent: json.percent
 	    }
 	  });
 	  times.push(nodes);
@@ -37,7 +37,6 @@ var createAlluvialData = (function(json) {
 	addNext = function() {
 		var current = times[times.length-1];
 		var nextt = addFirstIteration();
-		console.log("4: " + times[times.length-1].length);
 		// make links
 		current.forEach(function(n) {
 		  for (var x = 0; x < nextt.length; x++) {
@@ -51,9 +50,7 @@ var createAlluvialData = (function(json) {
 		  }
 		});
     // prune next
-		console.log("5: " + times[times.length-1].length);
     times[times.length-1] = nextt.filter(function(n) { return n.nodeValue });
-		console.log("6: " + times[times.length-1].length);
 	}
 	
 	// initial set

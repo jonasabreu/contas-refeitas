@@ -28,19 +28,15 @@ function loadAlluvial(url) {
     method: "GET",
     success: function(data) {
       json = data;
-	  var child = json;
-	  console.log(json);	
+	  var child = json;	
 	  for (var i = 1; i < hystory.length; i++) 
-	  child = child.childs[hystory[i] - 1];
-	  console.log("asdjaskd");
-	  console.log(child);
-      drawAlluvial(child);
+	  	child = child.childs[hystory[i] - 1];
+    drawAlluvial(child);
     }
   });
 };
 
 var qtipShow = function() {
-	console.log($("rect").length);
 	$('rect').each(function(index, item){
 		if ($(item).data("events")) {
 			return;
@@ -55,7 +51,6 @@ var qtipShow = function() {
 						percentage_total: $(this).data("tp"),
 						buttons: []
 					};
-					console.log("=======> " + myData.id);
 					var buttons = [
 						{ name: "Natureza", url: "/natureza", "color": "primary" },
 						{ name: "Destino", url: "/destino", "color": "inverse" },
@@ -99,7 +94,6 @@ var registerTemplates = function() {
 
 $(document).ready(function() {
 	loadAlluvial(); 
-	//setTimeout(bindEvents, 3000);
 	registerTemplates();
 	buttonClick();
   setTimeout(qtipShow, 1000);

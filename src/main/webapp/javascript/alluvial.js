@@ -24,14 +24,12 @@ function update(first, data, t, vis, x, y, delay, padding, nodeMap, line) {
 			if (height < 18) {
 				offsetMap[n.id] = offsets++;
 			}
-			console.log("OffsetMap: " + n.id + ":" + offsets);
 		});
 		
     setTimeout(function() {
         nodes.append('svg:rect')
             .attr('fill', '#333333')
             .attr('y', function(n, i) {
-								console.log("offset => " + offsetMap[n.id]);
                 return y(n.offsetValue) + (i * padding) + (padding * offsetMap[n.id]);
             })
             .attr('width', x.rangeBand())
@@ -80,8 +78,7 @@ function update(first, data, t, vis, x, y, delay, padding, nodeMap, line) {
                  y(l.outOffset) +
                  y(l.value)/2;
 						if (target.h)
-						
-						console.log("spline offset => " + offsetMap[target.id]);
+						  console.log("spline offset => " + offsetMap[target.id]);
 
             var targety = y(target.offsetValue) + 
                  target.order * padding + 
