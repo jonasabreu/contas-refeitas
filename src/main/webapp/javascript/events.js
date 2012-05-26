@@ -46,42 +46,48 @@ var qtipShow = function() {
 			return;
 		}
 	
-	$(item).qtip({
-		content: { 
-			text: function() { 
-				var myData = {
-					name: $(this).data("description"),
-					percentage_parent: $(this).data("pp"),
-					percentage_total: $(this).data("tp"),
-					buttons: []
-				};
-				console.log("=======> " + myData.id);
-				var buttons = [
-					{ name: "Natureza", url: "/natureza", "color": "primary" },
-					{ name: "Destino", url: "/destino", "color": "inverse" },
-					{ name: "SubFun&ccedil;&atilde;o", url: "/subfuncao", "color": "info" }
-				];
-				
-				for (var index in buttons) {
-					var btn = buttons[index];
-					if (filters.indexOf(btn.url) == -1) {
-						btn.url = filters + btn.url;
-						btn.id = $(this).data("id");
-						myData.buttons.push(btn);
+	var tipSettings = 	{
+			content: { 
+				text: function() { 
+					var myData = {
+						name: $(this).data("description"),
+						percentage_parent: $(this).data("pp"),
+						percentage_total: $(this).data("tp"),
+						buttons: []
+					};
+					console.log("=======> " + myData.id);
+					var buttons = [
+						{ name: "Natureza", url: "/natureza", "color": "primary" },
+						{ name: "Destino", url: "/destino", "color": "inverse" },
+						{ name: "SubFun&ccedil;&atilde;o", url: "/subfuncao", "color": "info" }
+					];
+
+					for (var index in buttons) {
+						var btn = buttons[index];
+						if (filters.indexOf(btn.url) == -1) {
+							btn.url = filters + btn.url;
+							btn.id = $(this).data("id");
+							myData.buttons.push(btn);
+						}
 					}
-				}
-				
-				return $.render.qtipTemplate(myData);
+
+					return $.render.qtipTemplate(myData);
+				},
 			},
-		},
-		position: { at: 'bottom center', my: 'top center' },
-    show: { event: 'click' },
-		hide: { event: 'click' },
-    style: {
-			classes: 'ui-tooltip-light ui-tooltip-shadow'
-		}
-  	});
-  });
+			position: { at: 'bottom center', my: 'top center' },
+	    show: { event: 'click' },
+			hide: { event: 'click' },
+	    style: {
+				classes: 'ui-tooltip-light ui-tooltip-shadow'
+			}
+	  };
+	
+	if ($(item).data("id") == 0)
+		tipSettings.show.ready = true;
+	
+	$(item).qtip(tipSettings);
+	
+	});
 };
 
 
@@ -96,7 +102,7 @@ $(document).ready(function() {
 	//setTimeout(bindEvents, 3000);
 	registerTemplates();
 	buttonClick();
-  
+  setTimeout(qtipShow, 1000);
   $('li.item a').click(function(){
 	  $('li.item').removeClass('active');
 	  $(this).parent().addClass('active');
