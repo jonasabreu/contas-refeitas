@@ -73,7 +73,7 @@ div.info-tip ul li label {
   font-weight: bold;
   width: 192px;
 }
-div.info-tip ul.buttons { }
+div.info-tip ul.buttons {  }
 div.info-tip ul.buttons li {
 	float: left;
 }

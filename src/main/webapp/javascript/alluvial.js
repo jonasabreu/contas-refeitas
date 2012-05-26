@@ -40,10 +40,13 @@ function update(first, data, t, vis, x, y, delay, padding, nodeMap, line) {
 							if (height < 18) return 18;
 							return height;
 						})
+						.on("mouseover", qtipShow)
 						.attr('data-id', function(n) { return n.id })
             .attr('data-description', function(n) { return n.nodeName })
        			.attr('data-pp', function(n) { return n.parentPercent })
-						.attr('data-tp', function(n) { return n.totalPercent })
+						.attr('data-tp', function(n) { return n.totalPercent });
+						
+				
 				nodes.append('svg:text')
 					.attr('fill', '#FFFFFF')
           .attr('y', function(n, i) {
@@ -115,6 +118,7 @@ function update(first, data, t, vis, x, y, delay, padding, nodeMap, line) {
       .transition()
         .duration(delay)
         .attr('d', linkLine());
+		
 		
 		return t;
 }

@@ -72,7 +72,7 @@
 			</ul>
 			<ul class="buttons">
 			{{for buttons}}
-				<li><button data-url='{{:url}}' class='btn btn-{{:color}}'>{{:name}}</button></li>
+				<li><button data-id="{{:id}}" data-url='{{:url}}' class='btn btn-{{:color}}'>{{:name}}</button></li>
 			{{/for}}
 			<ul>
 		</div>
