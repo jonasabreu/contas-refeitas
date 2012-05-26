@@ -59,7 +59,7 @@ class Orcamento {
         val (innerItems, maxChilds) = join(filteredItems, filters.tail, limit, startAt, soma, total)
         Child(item, soma, innerItems, root, total, maxChilds)
       }).sortWith((a, b) => a.value > b.value)
-      (aux.slice(startAt, startAt + limit), aux.length)
+      (if (!(filters.length == 1)) aux else aux.slice(startAt, startAt + limit), aux.length)
     } else {
       (List(), 0)
     }

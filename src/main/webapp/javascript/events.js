@@ -5,8 +5,7 @@ var limit = 10;
 var startAt = 0;
 
 function reset() {
-	hystory = [];
-	filters = "";
+	loadAlluvial(filters);
 	$("article svg").remove();
 }
 
@@ -97,7 +96,6 @@ $(document).ready(function() {
 	  $(this).parent().addClass('active');
 	  limit = $(this).text();
 	  reset();
-	  loadAlluvial("");
   });
   
   $('#slider').slider({
@@ -105,7 +103,6 @@ $(document).ready(function() {
   		change: function(event, ui) {
   			startAt = $('#slider').slider('value');
   			reset();
-  			loadAlluvial("");
   		}
   });
 
