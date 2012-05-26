@@ -39,7 +39,7 @@ function drawAlluvial(json) {
 	var vis = d3.select("#svg")
 	  .append("svg:svg")
 	    .attr("width", w)
-	    .attr("height", h + 110 + (json.childs.length == 0 ? 0 : json.childs.length - 10) * (padding + 18));
+	    .attr("height", h + 110 + (padding + 18));
 
 	var t = 0;
 

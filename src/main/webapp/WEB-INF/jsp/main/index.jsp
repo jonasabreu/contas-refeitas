@@ -27,24 +27,26 @@
 	</header>
 	
 	<section>
-		<article>
+		<article id="info">
 			<ul>
-				<li>
+				<li class="heading">
 					<h1>O que &#233;?</h1>
 				</li>
-				<li>
+				<li class="text">
 					<p>Apresenta&#231;&#227;o dos dados financeiros da c&#226;mara municipal para o 
 				p&#250;blico interessado atrav&#233;s de navega&#231;&#227;o entre as divis&#245;es de gastos afim de expor dados de forma siplificada com textos e gr&#225;ficos.</p>
 				</li>
-				<li>
+				<li class="text line2">
+					<p>Apresenta&#231;&#227;o dos dados financeiros da c&#226;mara municipal para o 
+				p&#250;blico interessado atrav&#233;s de navega&#231;&#227;o entre as divis&#245;es de gastos afim de expor dados de forma siplificada com textos e gr&#225;ficos.</p>
+				</li>
+				<li class="heading line2">
 					<h1>Por que?</h1>
-				</li>
-				<li>
-					<p>Apresenta&#231;&#227;o dos dados financeiros da c&#226;mara municipal para o 
-				p&#250;blico interessado atrav&#233;s de navega&#231;&#227;o entre as divis&#245;es de gastos afim de expor dados de forma siplificada com textos e gr&#225;ficos.</p>
 				</li>
 			</ul>
 		</article>
+	</section>
+	<section>
 		<article>
 			<ul id="items" class="nav nav-pills">
 				<li><a href="#">Items:</a></li>			
@@ -54,8 +56,6 @@
 			</ul>
 			Come&ccedil;ando em <div id="slider"></div>
 		</article>
-	</section>
-	<section>
 		<article>
 			<div id="svg"></div>
 		</article>

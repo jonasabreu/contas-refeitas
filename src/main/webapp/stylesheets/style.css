@@ -52,6 +52,38 @@ header img#logo {
 	float: left;
 }
 article { padding: 20px; }
+article#info { height: 223px; }
+article#info ul { 
+  list-style: none outside none;
+	margin-left: 16px;
+}
+article#info ul li { 
+	float: left;
+}
+article#info ul li.heading { 
+	background-color: #B5B5B5;
+  border-radius: 13px 13px 13px 13px;
+  padding: 10px;
+  text-align: center;
+  width: 180px;
+}
+article#info ul li.line2 { margin-top: 25px !important; }
+article#info ul li.text { 
+  background-color: #F1F1F1;
+  border-radius: 13px 13px 13px 13px;
+  padding: 10px 10px 0px 10px;
+  width: 500px; 
+}
+
+article#info ul li:nth-child(2n+1)  { margin: 0px 68px;}
+article#info ul li.text p {
+	line-height: 2em;
+}
+
+article ul#items li.active a { background-color: #555555; }
+a { color: #333333}
+article div#slider { width: 800px; display: inline-block; margin-left: 20px;}
+article div#slider a { width: 100px;}
 body:last-child { margin-bottom: 60px; }
 h3 { font-size: 14px; }
 
