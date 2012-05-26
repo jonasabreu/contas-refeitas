@@ -5,7 +5,7 @@ var limit = 10;
 var startAt = 0;
 
 function reset() {
-	history = [];
+	hystory = [];
 	filters = "";
 	$("article svg").remove();
 }
@@ -29,9 +29,12 @@ function loadAlluvial(url) {
     method: "GET",
     success: function(data) {
       json = data;
-			var child = json;
-				for (var i = 1; i < hystory.length; i++) 
-			  	child = child.childs[hystory[i] - 1];
+	  var child = json;
+	  console.log(json);	
+	  for (var i = 1; i < hystory.length; i++) 
+	  child = child.childs[hystory[i] - 1];
+	  console.log("asdjaskd");
+	  console.log(child);
       drawAlluvial(child);
     }
   });
