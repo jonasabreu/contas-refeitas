@@ -4,6 +4,12 @@ var filters = "";
 var limit = 10;
 var startAt = 0;
 
+function reset() {
+	history = [];
+	filters = "";
+	$("article svg").remove();
+}
+
 var buttonClick = function() { 
 	$("ul.buttons button").live('click', function() {
   	$("article svg").remove();
@@ -87,16 +93,16 @@ $(document).ready(function() {
 	  $('li.item').removeClass('active');
 	  $(this).parent().addClass('active');
 	  limit = $(this).text();
-	  $("article svg").remove();
-	  loadAlluvial();
+	  reset();
+	  loadAlluvial("");
   });
   
   $('#slider').slider({
   		min: 0,
   		change: function(event, ui) {
   			startAt = $('#slider').slider('value');
-  			$("article svg").remove();
-  			loadAlluvial();
+  			reset();
+  			loadAlluvial("");
   		}
   });
 
