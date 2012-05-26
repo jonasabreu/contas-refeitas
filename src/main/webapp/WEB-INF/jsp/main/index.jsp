@@ -33,12 +33,10 @@
 					<h1>O que &#233;?</h1>
 				</li>
 				<li class="text">
-					<p>Apresenta&#231;&#227;o dos dados financeiros da c&#226;mara municipal para o 
-				p&#250;blico interessado atrav&#233;s de navega&#231;&#227;o entre as divis&#245;es de gastos afim de expor dados de forma siplificada com textos e gr&#225;ficos.</p>
+					<p>Apresenta&#231;&#227;o dos dados financeiros da C&#226;mara Municipal de S&#227;o Paulo para o p&#250;blico interessado atrav&#233;s de navega&#231;&#227;o entre as divis&#245;es de gastos afim de expor dados de forma siplificada com textos e gr&#225;ficos.</p>
 				</li>
 				<li class="text line2">
-					<p>Apresenta&#231;&#227;o dos dados financeiros da c&#226;mara municipal para o 
-				p&#250;blico interessado atrav&#233;s de navega&#231;&#227;o entre as divis&#245;es de gastos afim de expor dados de forma siplificada com textos e gr&#225;ficos.</p>
+					<p>Os dados de transpar&#234;ncia liberado pela Cam&#226;ra Municipal de S&#227;o Paulo n&#227;o est&#227;o em um formato simples de se ler, onde qualquer pessoa por tirar informa&#231;&#245;es. O Contas Refeitas tem o objetivo de mostrar estes dados de uma forma simples.</p>
 				</li>
 				<li class="heading line2">
 					<h1>Por que?</h1>
