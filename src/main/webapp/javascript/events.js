@@ -41,7 +41,12 @@ function loadAlluvial(url) {
 
 var qtipShow = function() {
 	console.log($("rect").length);
-	$("rect").qtip({
+	$('rect').each(function(index, item){
+		if ($(item).data("events")) {
+			return;
+		}
+	
+	$(item).qtip({
 		content: { 
 			text: function() { 
 				var myData = {
@@ -75,6 +80,7 @@ var qtipShow = function() {
     style: {
 			classes: 'ui-tooltip-light ui-tooltip-shadow'
 		}
+  	});
   });
 };
 
