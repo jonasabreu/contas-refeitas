@@ -3,14 +3,15 @@ var createAlluvialData = (function(json) {
   var allLinks = [];
   var counter = 0;
 	addRoot = function() {
-		console.log("total: " + json.value);
 	  var nodes = d3.range(0, 1).map(function(n) {
 	    return {
 	        id: counter++,
 	        nodeName: json.label,
 	        nodeValue: json.value,
 	        incoming: [],
-					formattedValue: json.formattedValue
+					formattedValue: json.formattedValue,
+					parentPercent: childs[n].rootPercent,
+					totalPercent: childs[n].percent
 	    }
 	  });
 	  times.push(nodes);
@@ -20,7 +21,6 @@ var createAlluvialData = (function(json) {
 		var childs = json.childs;
 	  var until = childs.length == 1 ? 1 : childs.length;
     var nodes = d3.range(0,  until).map(function(n) {
-			console.log(n + ") value: " + childs[n].value);
       return {
         id: counter++,
         nodeName: childs[n].label,
@@ -31,11 +31,7 @@ var createAlluvialData = (function(json) {
 				totalPercent: childs[n].percent
       };
    	});
-		console.log("childs.length: " + childs.length);
-		console.log("until: " + until);
-		console.log("nodes: " + nodes.length);
 	  times.push(nodes);
-	  console.log("times: " + times[times.length-1].length);
 	  return nodes;
 	},
 	addNext = function() {
