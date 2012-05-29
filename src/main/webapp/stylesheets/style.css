@@ -124,3 +124,7 @@ footer {
 	color: #FFF;
 	background-color: #333;
 }
+
+#svg {
+	display: inline-block;
+}

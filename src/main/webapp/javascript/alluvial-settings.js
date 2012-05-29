@@ -36,10 +36,16 @@ function drawAlluvial(json) {
 	        .interpolate('basis');
 
 	// root
+	var svgHeight = h + 110 + (padding + 18);
 	var vis = d3.select("#svg")
 	  .append("svg:svg")
 	    .attr("width", w)
-	    .attr("height", h + 110 + (padding + 18));
+	    .attr("height", svgHeight);
+
+	var divHeight = parseInt($('#svg').css('min-height')) || 0;
+	if (divHeight < svgHeight) {
+		$('#svg').css('min-height', (svgHeight + 10) + "px");
+	}
 
 	var t = 0;
 
