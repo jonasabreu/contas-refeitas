@@ -97,7 +97,9 @@ $(document).ready(function() {
 	registerTemplates();
 	buttonClick();
   setTimeout(qtipShow, 1000);
-  $('li.item a').click(function(){
+  
+  $('li.item a').click(function(e){
+  	  e.preventDefault();
 	  $('li.item').removeClass('active');
 	  $(this).parent().addClass('active');
 	  limit = $(this).text();
@@ -107,6 +109,7 @@ $(document).ready(function() {
   $('#slider').slider({
   		min: 0,
   		change: function(event, ui) {
+  			event.preventDefault();
   			startAt = $('#slider').slider('value');
   			reset();
   		}
